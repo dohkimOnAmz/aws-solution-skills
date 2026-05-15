@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636 580" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <defs>
+    <marker id="arr-21" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7B61FF"/>
+    </marker>
+  </defs>
+
+  <!-- 베이스 (CP만 강조 + 새 Layer 8 추가) -->
+  <rect x="20" y="20" width="596" height="320" rx="8" fill="#161E2D" stroke="#7B61FF" stroke-width="2"/>
+  <text x="318" y="48" text-anchor="middle" fill="#7B61FF" font-size="14" font-weight="bold">베이스 + Layer 8 추가 ★</text>
+
+  <!-- CP Domain (그대로) -->
+  <rect x="40" y="70" width="240" height="80" rx="6" fill="#1A2744" stroke="#FF9900" stroke-width="1.5"/>
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Connect_48.png" x="55" y="85" width="40" height="40"/>
+  <text x="75" y="138" text-anchor="middle" fill="#FFFFFF" font-size="10">Connect CP</text>
+  <text x="180" y="100" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">CP Domain</text>
+  <text x="180" y="120" text-anchor="middle" fill="#999999" font-size="10">(그대로)</text>
+  <text x="180" y="140" text-anchor="middle" fill="#5A6A7A" font-size="9" font-style="italic">개별 프로필 유지</text>
+
+  <!-- 화살표: CP → Neptune -->
+  <line x1="285" y1="110" x2="320" y2="110" stroke="#7B61FF" stroke-width="2.5" marker-end="url(#arr-21)"/>
+  <text x="303" y="100" text-anchor="middle" fill="#7B61FF" font-size="9" font-style="italic">Sync</text>
+
+  <!-- Neptune (새 Layer 8) -->
+  <rect x="325" y="70" width="270" height="80" rx="6" fill="#1A2744" stroke="#7B61FF" stroke-width="2.5"/>
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Neptune_48.png" x="340" y="85" width="40" height="40"/>
+  <text x="360" y="138" text-anchor="middle" fill="#FFFFFF" font-size="10">Neptune ★</text>
+  <text x="490" y="100" text-anchor="middle" fill="#7B61FF" font-size="11" font-weight="bold">Graph DB</text>
+  <text x="490" y="118" text-anchor="middle" fill="#FFFFFF" font-size="10">openCypher / Gremlin</text>
+  <text x="490" y="136" text-anchor="middle" fill="#999999" font-size="9">db.r5.large 최소</text>
+
+  <!-- VPC + NAT -->
+  <rect x="40" y="170" width="555" height="50" rx="6" fill="#1A2744" stroke="#7B61FF" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/resource/Res_Amazon-VPC_NAT-Gateway_48.png" x="60" y="180" width="32" height="32"/>
+  <text x="105" y="200" fill="#FFFFFF" font-size="11" font-weight="bold">VPC + NAT Gateway ★</text>
+  <text x="105" y="215" fill="#5A6A7A" font-size="10" font-style="italic">Neptune 격리 (Public 접근 불가)</text>
+
+  <!-- GraphRAG -->
+  <rect x="40" y="240" width="555" height="80" rx="6" fill="#1A2744" stroke="#7B61FF" stroke-width="2"/>
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Lambda_48.png" x="60" y="252" width="40" height="40"/>
+  <text x="80" y="305" text-anchor="middle" fill="#FFFFFF" font-size="9">Lambda</text>
+  <text x="120" y="265" fill="#7B61FF" font-size="12" font-weight="bold">GraphRAG ★</text>
+  <text x="120" y="285" fill="#FFFFFF" font-size="10">자연어 → Cypher 변환 → 결과 해석</text>
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Bedrock_48.png" x="500" y="252" width="40" height="40"/>
+  <text x="520" y="305" text-anchor="middle" fill="#FFFFFF" font-size="9">Bedrock</text>
+
+  <!-- 분석 가능 -->
+  <rect x="20" y="360" width="596" height="115" rx="6" fill="#161E2D" stroke="#7B61FF" stroke-width="1.5"/>
+  <text x="40" y="385" fill="#7B61FF" font-size="12" font-weight="bold">★ 추가 분석 가능</text>
+  <text x="40" y="408" fill="#E6EDF3" font-size="11">  • "이 고객의 가족 / 동행자는?"</text>
+  <text x="40" y="428" fill="#E6EDF3" font-size="11">  • "법인 고객이 추천한 개인은?"</text>
+  <text x="40" y="448" fill="#E6EDF3" font-size="11">  • "여행 동반자 네트워크는?"</text>
+  <text x="40" y="468" fill="#7B61FF" font-size="10" font-style="italic">  • AI: "서울 출장 잦은 VIP의 선호 호텔?" (자연어)</text>
+
+  <!-- 비용 추가 -->
+  <rect x="20" y="490" width="596" height="80" rx="8" fill="#161E2D" stroke="#7B61FF" stroke-width="2.5"/>
+  <text x="40" y="518" fill="#FFFFFF" font-size="12">월 비용 추가</text>
+  <text x="596" y="520" text-anchor="end" fill="#7B61FF" font-size="18" font-weight="bold">+$300</text>
+  <text x="40" y="540" fill="#FFFFFF" font-size="12">VPC 설계</text>
+  <text x="596" y="540" text-anchor="end" fill="#7B61FF" font-size="13" font-weight="bold">필수</text>
+  <text x="40" y="560" fill="#999999" font-size="10" font-style="italic">관계 분석이 비즈니스 가치 만들 때만 — 신중 결정</text>
+</svg>

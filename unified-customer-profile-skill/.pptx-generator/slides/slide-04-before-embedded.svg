@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636 580" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E8562A"/>
+    </marker>
+  </defs>
+
+  <!-- Chat Session #1 카드 -->
+  <rect x="40" y="20" width="556" height="160" rx="8" fill="#161E2D" stroke="#5A6A7A" stroke-width="2"/>
+  <text x="60" y="50" fill="#999999" font-family="D2Coding" font-size="14" font-weight="bold">[ Chat Session #1 ]</text>
+  <text x="60" y="80" fill="#FFFFFF" font-family="D2Coding" font-size="14">User:</text>
+  <text x="100" y="80" fill="#E6EDF3" font-family="D2Coding" font-size="14">"긴 지침을 매번 붙여넣기..."</text>
+  <text x="60" y="105" fill="#FFFFFF" font-family="D2Coding" font-size="13">  - 체크리스트 1, 2, 3, 4, 5</text>
+  <text x="60" y="125" fill="#FFFFFF" font-family="D2Coding" font-size="13">  - 다단계 절차 설명</text>
+  <text x="60" y="145" fill="#FFFFFF" font-family="D2Coding" font-size="13">  - 컨벤션·제약 나열</text>
+  <text x="60" y="170" fill="#E8562A" font-family="D2Coding" font-size="14" font-weight="bold">→ 토큰 비용 부과</text>
+
+  <!-- 반복 화살표 -->
+  <line x1="318" y1="200" x2="318" y2="240" stroke="#E8562A" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrow-orange)"/>
+  <text x="318" y="225" fill="#E8562A" font-family="D2Coding" font-size="13" text-anchor="middle" font-style="italic">매 대화마다 반복</text>
+
+  <!-- Chat Session #2 카드 -->
+  <rect x="40" y="260" width="556" height="160" rx="8" fill="#161E2D" stroke="#5A6A7A" stroke-width="2"/>
+  <text x="60" y="290" fill="#999999" font-family="D2Coding" font-size="14" font-weight="bold">[ Chat Session #2 ]</text>
+  <text x="60" y="320" fill="#FFFFFF" font-family="D2Coding" font-size="14">User:</text>
+  <text x="100" y="320" fill="#E6EDF3" font-family="D2Coding" font-size="14">"같은 긴 지침 또 붙여넣기..."</text>
+  <text x="60" y="345" fill="#FFFFFF" font-family="D2Coding" font-size="13">  (동일 N항목 반복)</text>
+  <text x="60" y="385" fill="#E8562A" font-family="D2Coding" font-size="14" font-weight="bold">→ 토큰 비용 또 부과</text>
+  <text x="60" y="410" fill="#E8562A" font-family="D2Coding" font-size="14" font-weight="bold">→ 실수 위험 재현</text>
+
+  <!-- 결과 요약 박스 -->
+  <rect x="40" y="450" width="556" height="110" rx="8" fill="#1A2744" stroke="#E8562A" stroke-width="2"/>
+  <text x="60" y="478" fill="#E8562A" font-family="D2Coding" font-size="15" font-weight="bold">결과:</text>
+  <text x="60" y="503" fill="#FFFFFF" font-family="D2Coding" font-size="14">  • 반복 = 비용·실수 누적</text>
+  <text x="60" y="525" fill="#FFFFFF" font-family="D2Coding" font-size="14">  • 절차 표준화 어려움</text>
+  <text x="60" y="547" fill="#FFFFFF" font-family="D2Coding" font-size="14">  • 버전 관리 불가능</text>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "type": "content",
+  "title": "옵션 3 — Cross-Domain on/off 비교",
+  "elements": [
+    {"fn": "add_textbox", "args": {"x": "C1", "y": "R1", "w": "6-col", "h": "1-row", "text": "Single Domain — 기본", "color_token": "TEXT_GRAY", "font_size_token": "BODY_XL", "valign": "middle"}},
+    {"fn": "add_diagram", "args": {"file": "slide-22-single-embedded.svg", "x": "C1", "y": "R2", "w": "6-col", "h": "11-row"}},
+    {"fn": "add_textbox", "args": {"x": "C7", "y": "R1", "w": "6-col", "h": "1-row", "text": "Cross-Domain ON — + Platform 통합", "color_token": "ACCENT_ROSE", "font_size_token": "BODY_XL", "valign": "middle"}},
+    {"fn": "add_diagram", "args": {"file": "slide-22-cross-embedded.svg", "x": "C7", "y": "R2", "w": "6-col", "h": "11-row"}}
+  ]
+}

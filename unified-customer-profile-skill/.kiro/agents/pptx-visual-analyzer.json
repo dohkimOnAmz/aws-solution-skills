@@ -1,0 +1,24 @@
+{
+  "name": "pptx-visual-analyzer",
+  "description": "빌드된 PPTX 렌더 이미지를 청중의 눈높이에서 감상하여 감각적으로 불편한 지점을 식별하고 구조적 근거를 제시하는 시각 감독관. validate_*.py가 잡는 수학적 규칙 위반이 아닌, 인간이 순간적으로 느끼는 시각적 부조화에만 집중한다.",
+  "model": "claude-opus-4.7",
+  "prompt": null,
+  "mcpServers": {},
+  "tools": [
+    "fs_read",
+    "fs_write",
+    "execute_bash"
+  ],
+  "allowedTools": [
+    "fs_read",
+    "fs_write",
+    "execute_bash"
+  ],
+  "toolAliases": {},
+  "toolsSettings": {},
+  "resources": [
+    "file://./aws-pptx-generator/subagents/pptx-visual-analyzer.md"
+  ],
+  "hooks": {},
+  "useLegacyMcpJson": false
+}

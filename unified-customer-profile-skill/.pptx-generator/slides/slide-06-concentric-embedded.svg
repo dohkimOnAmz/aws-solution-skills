@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636 580" preserveAspectRatio="xMidYMid meet">
+  <!-- 외곽 큰 원 — Tool Extensions -->
+  <circle cx="318" cy="290" r="240" fill="#1A2744" stroke="#FF9900" stroke-width="2.5"/>
+
+  <!-- 외곽 라벨 (상단) -->
+  <text x="318" y="40" text-anchor="middle" fill="#FF9900" font-family="D2Coding" font-size="20" font-weight="bold">Tool Extensions</text>
+  <text x="318" y="62" text-anchor="middle" fill="#999999" font-family="D2Coding" font-size="13" font-style="italic">Claude Code 고유 기능</text>
+
+  <!-- 내부 작은 원 — Standard Core -->
+  <circle cx="318" cy="290" r="130" fill="#161E2D" stroke="#00A8A8" stroke-width="3"/>
+
+  <!-- 내부 라벨 -->
+  <text x="318" y="232" text-anchor="middle" fill="#00A8A8" font-family="D2Coding" font-size="17" font-weight="bold">Standard Core</text>
+  <text x="318" y="252" text-anchor="middle" fill="#999999" font-family="D2Coding" font-size="12" font-style="italic">agentskills.io</text>
+
+  <!-- 내부 SKILL.md 명세 -->
+  <text x="318" y="285" text-anchor="middle" fill="#FFFFFF" font-family="D2Coding" font-size="15" font-weight="bold">SKILL.md</text>
+  <text x="280" y="312" fill="#E6EDF3" font-family="D2Coding" font-size="12">• name</text>
+  <text x="280" y="330" fill="#E6EDF3" font-family="D2Coding" font-size="12">• description</text>
+  <text x="280" y="348" fill="#E6EDF3" font-family="D2Coding" font-size="12">• markdown body</text>
+
+  <!-- 외곽 확장 콘텐츠 (큰 원 안 작은 원 밖) -->
+  <text x="318" y="475" text-anchor="middle" fill="#FF9900" font-family="D2Coding" font-size="13" font-weight="bold">+ allowed-tools  ·  + disable-model-invocation</text>
+  <text x="318" y="498" text-anchor="middle" fill="#FF9900" font-family="D2Coding" font-size="13" font-weight="bold">+ context: fork (subagent 격리 실행)</text>
+  <text x="318" y="521" text-anchor="middle" fill="#FF9900" font-family="D2Coding" font-size="13" font-weight="bold">+ !`&lt;command&gt;` 동적 컨텍스트 주입</text>
+  <text x="318" y="544" text-anchor="middle" fill="#FF9900" font-family="D2Coding" font-size="13" font-weight="bold">+ 4-tier 위치 (Enterprise · Personal · Project · Plugin)</text>
+</svg>

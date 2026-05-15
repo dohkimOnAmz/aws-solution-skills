@@ -1,0 +1,16 @@
+{
+  "type": "content",
+  "title": "도구별 import : 1분 내 셋업 + 한 줄 자연어",
+  "elements": [
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-15-tools-embedded.svg",
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "12-row"
+      }
+    }
+  ]
+}

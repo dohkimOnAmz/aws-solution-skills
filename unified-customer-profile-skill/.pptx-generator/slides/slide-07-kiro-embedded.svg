@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 200" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <!-- 카드 배경 -->
+  <rect x="6" y="6" width="844" height="188" rx="10" fill="#1A2744" stroke="#7B61FF" stroke-width="2"/>
+
+  <!-- 도구명 -->
+  <text x="30" y="42" fill="#7B61FF" font-size="22" font-weight="bold">Kiro IDE</text>
+  <text x="30" y="64" fill="#999999" font-size="13" font-style="italic">워크스페이스 Steering + Spec 시스템</text>
+
+  <!-- 셋업 명령 박스 -->
+  <rect x="30" y="80" width="650" height="36" rx="4" fill="#161E2D" stroke="#5A6A7A" stroke-width="1"/>
+  <text x="42" y="103" fill="#E6EDF3" font-size="13">$ cp -r kiro/.kiro/ &lt;your-project&gt;/.kiro/</text>
+
+  <!-- 소요 시간 -->
+  <rect x="700" y="80" width="130" height="36" rx="4" fill="#00A8A8"/>
+  <text x="765" y="103" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">소요 ~30초</text>
+
+  <!-- 트리거 예시 -->
+  <text x="30" y="148" fill="#FFFFFF" font-size="13" font-weight="bold">트리거:</text>
+  <text x="100" y="148" fill="#7B61FF" font-size="13" font-style="italic">"Using AI-DLC, UCP를 만들어주세요"</text>
+
+  <!-- 핵심 라벨 -->
+  <text x="30" y="176" fill="#999999" font-size="12">→ Steering Rules + Spec 인식 → AI-DLC Inception → Construction 자동 진행</text>
+</svg>

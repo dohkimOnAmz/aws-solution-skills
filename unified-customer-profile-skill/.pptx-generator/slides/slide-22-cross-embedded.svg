@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636 580" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <defs>
+    <marker id="arr-22b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF4D8B"/>
+    </marker>
+  </defs>
+
+  <!-- 사업부별 Connect Instance × N -->
+  <rect x="20" y="20" width="596" height="155" rx="8" fill="#1A2744" stroke="#FF4D8B" stroke-width="2"/>
+  <text x="318" y="48" text-anchor="middle" fill="#FF4D8B" font-size="13" font-weight="bold">사업부별 Connect Instance × N ★</text>
+
+  <!-- 3개 사업부 박스 -->
+  <g transform="translate(40, 65)">
+    <rect x="0" y="0" width="170" height="95" rx="6" fill="#161E2D" stroke="#FF9900" stroke-width="1.5"/>
+    <image href="data:image/png;base64,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" x="10" y="10" width="32" height="32"/>
+    <text x="50" y="25" fill="#FFFFFF" font-size="11" font-weight="bold">Airline</text>
+    <text x="50" y="42" fill="#999999" font-size="10">Domain A</text>
+    <text x="10" y="65" fill="#FFFFFF" font-size="10">  • Booking, FFP</text>
+    <text x="10" y="82" fill="#FFFFFF" font-size="10">  • ER × 3</text>
+
+    <rect x="190" y="0" width="170" height="95" rx="6" fill="#161E2D" stroke="#FF9900" stroke-width="1.5"/>
+    <image href="data:image/png;base64,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" x="200" y="10" width="32" height="32"/>
+    <text x="240" y="25" fill="#FFFFFF" font-size="11" font-weight="bold">Hotel</text>
+    <text x="240" y="42" fill="#999999" font-size="10">Domain B</text>
+    <text x="200" y="65" fill="#FFFFFF" font-size="10">  • Reservation</text>
+    <text x="200" y="82" fill="#FFFFFF" font-size="10">  • ER × 3</text>
+
+    <rect x="380" y="0" width="170" height="95" rx="6" fill="#161E2D" stroke="#FF9900" stroke-width="1.5"/>
+    <image href="data:image/png;base64,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" x="390" y="10" width="32" height="32"/>
+    <text x="430" y="25" fill="#FFFFFF" font-size="11" font-weight="bold">Agency</text>
+    <text x="430" y="42" fill="#999999" font-size="10">Domain C</text>
+    <text x="390" y="65" fill="#FFFFFF" font-size="10">  • Package</text>
+    <text x="390" y="82" fill="#FFFFFF" font-size="10">  • ER × 3</text>
+  </g>
+
+  <!-- 3 도메인 → Platform 화살표 -->
+  <line x1="125" y1="180" x2="280" y2="220" stroke="#FF4D8B" stroke-width="2" marker-end="url(#arr-22b)"/>
+  <line x1="318" y1="180" x2="318" y2="218" stroke="#FF4D8B" stroke-width="2" marker-end="url(#arr-22b)"/>
+  <line x1="510" y1="180" x2="356" y2="220" stroke="#FF4D8B" stroke-width="2" marker-end="url(#arr-22b)"/>
+
+  <!-- Platform CP Domain ★ -->
+  <rect x="20" y="225" width="596" height="120" rx="8" fill="#161E2D" stroke="#FF4D8B" stroke-width="2.5"/>
+  <text x="318" y="252" text-anchor="middle" fill="#FF4D8B" font-size="14" font-weight="bold">★ Platform CP Domain (통합 뷰)</text>
+  <line x1="60" y1="262" x2="576" y2="262" stroke="#FF4D8B" stroke-width="1" opacity="0.4"/>
+
+  <text x="40" y="285" fill="#FFFFFF" font-size="11">  • Cross-Domain ER Workflow  (사업부 간 동일 고객 식별)</text>
+  <text x="40" y="307" fill="#FFFFFF" font-size="11">  • Ecosystem CLV  =  Σ(도메인별 매출) × 시너지 계수</text>
+  <text x="40" y="329" fill="#FFFFFF" font-size="11">  • 도메인 매출 + 멀티-사업부 가입 시 1.2~1.5x 시너지 보너스</text>
+
+  <!-- 적합 -->
+  <rect x="20" y="365" width="596" height="125" rx="8" fill="#1A2744" stroke="#FF4D8B" stroke-width="1.5"/>
+  <text x="40" y="390" fill="#FF4D8B" font-size="13" font-weight="bold">✓ 적합 시나리오</text>
+  <text x="40" y="415" fill="#E6EDF3" font-size="11">  • 여행 그룹  (항공 + 호텔 + 여행사)</text>
+  <text x="40" y="435" fill="#E6EDF3" font-size="11">  • 금융 그룹  (은행 + 카드 + 증권 + 보험)</text>
+  <text x="40" y="455" fill="#E6EDF3" font-size="11">  • 리테일 그룹  (백화점 + 할인점 + H&amp;B)</text>
+  <text x="40" y="475" fill="#E6EDF3" font-size="11">  • 통신 (모바일 + 인터넷 + IPTV)</text>
+
+  <!-- 비용 / quota -->
+  <rect x="20" y="500" width="596" height="70" rx="8" fill="#161E2D" stroke="#FF4D8B" stroke-width="2.5"/>
+  <text x="40" y="525" fill="#FFFFFF" font-size="12">Connect quota 사용</text>
+  <text x="596" y="528" text-anchor="end" fill="#FF4D8B" font-size="14" font-weight="bold">N+1개  →  증가 신청 필수</text>
+  <text x="40" y="550" fill="#FFFFFF" font-size="12">월 비용 추가</text>
+  <text x="596" y="553" text-anchor="end" fill="#FF4D8B" font-size="18" font-weight="bold">도메인 수 비례</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1296 624" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <!-- ============ Card 1: Connect Quota (TL) ============ -->
+  <rect x="20" y="20" width="410" height="280" rx="10" fill="#1A2744" stroke="#E8562A" stroke-width="2.5"/>
+  <text x="40" y="55" fill="#E8562A" font-size="20" font-weight="bold">⚠  Connect Instance</text>
+  <text x="40" y="80" fill="#E8562A" font-size="20" font-weight="bold">    Quota</text>
+  <line x1="40" y1="92" x2="410" y2="92" stroke="#E8562A" stroke-width="1" opacity="0.4"/>
+  <text x="40" y="125" fill="#FFFFFF" font-size="16">계정당 기본 2개</text>
+  <text x="40" y="155" fill="#FFFFFF" font-size="16">최대 4-5 (증가 신청 시)</text>
+  <text x="40" y="200" fill="#FF9900" font-size="14" font-weight="bold">⚡ Cross-Domain의</text>
+  <text x="40" y="222" fill="#FF9900" font-size="14" font-weight="bold">    첫 번째 벽</text>
+  <text x="40" y="270" fill="#999999" font-size="12" font-style="italic">→ 사업부 4개 이상이면</text>
+  <text x="40" y="288" fill="#999999" font-size="12" font-style="italic">    Service Quotas 사전 신청 필수</text>
+
+  <!-- ============ Card 2: ER ML Region (TM) ============ -->
+  <rect x="450" y="20" width="410" height="280" rx="10" fill="#1A2744" stroke="#E8562A" stroke-width="2.5"/>
+  <text x="470" y="55" fill="#E8562A" font-size="20" font-weight="bold">⚠  ER ML Matching</text>
+  <text x="470" y="80" fill="#E8562A" font-size="20" font-weight="bold">    리전 제약</text>
+  <line x1="470" y1="92" x2="840" y2="92" stroke="#E8562A" stroke-width="1" opacity="0.4"/>
+  <text x="470" y="125" fill="#FFFFFF" font-size="14">us-east-1, us-west-2,</text>
+  <text x="470" y="148" fill="#FFFFFF" font-size="14">eu-west-1, ap-southeast-1</text>
+  <text x="470" y="170" fill="#FFFFFF" font-size="14">등 일부만</text>
+  <text x="470" y="215" fill="#FF9900" font-size="14" font-weight="bold">⚡ 추천 전 반드시 확인</text>
+  <text x="470" y="240" fill="#999999" font-size="12">Rule-based는 대부분 OK</text>
+  <text x="470" y="280" fill="#999999" font-size="12" font-style="italic">→ AWS Knowledge MCP로 검증</text>
+
+  <!-- ============ Card 3: Bedrock Prefix (TR) ============ -->
+  <rect x="880" y="20" width="396" height="280" rx="10" fill="#1A2744" stroke="#E8562A" stroke-width="2.5"/>
+  <text x="900" y="55" fill="#E8562A" font-size="20" font-weight="bold">⚠  Bedrock 모델 ID</text>
+  <text x="900" y="80" fill="#E8562A" font-size="20" font-weight="bold">    apac. 접두사</text>
+  <line x1="900" y1="92" x2="1256" y2="92" stroke="#E8562A" stroke-width="1" opacity="0.4"/>
+  <text x="900" y="125" fill="#FFFFFF" font-size="14">AP 리전:</text>
+  <rect x="900" y="135" width="356" height="32" rx="4" fill="#161E2D"/>
+  <text x="912" y="156" fill="#E6EDF3" font-size="12">apac.anthropic.claude-sonnet-4-...</text>
+  <text x="900" y="195" fill="#FFFFFF" font-size="14">기타 리전:</text>
+  <rect x="900" y="205" width="356" height="32" rx="4" fill="#161E2D"/>
+  <text x="912" y="226" fill="#E6EDF3" font-size="12">anthropic.claude-sonnet-4-...</text>
+  <text x="900" y="270" fill="#FF9900" font-size="13" font-weight="bold">⚡ 접두사 누락 시 호출 실패</text>
+
+  <!-- ============ Card 4: Manual Setup (BL) ============ -->
+  <rect x="20" y="320" width="410" height="280" rx="10" fill="#1A2744" stroke="#E8562A" stroke-width="2.5"/>
+  <text x="40" y="355" fill="#E8562A" font-size="20" font-weight="bold">⚠  Connect ↔ CP Domain</text>
+  <text x="40" y="380" fill="#E8562A" font-size="20" font-weight="bold">    수동 연결</text>
+  <line x1="40" y1="392" x2="410" y2="392" stroke="#E8562A" stroke-width="1" opacity="0.4"/>
+  <text x="40" y="425" fill="#FFFFFF" font-size="14">CDK로 둘 다 생성 가능</text>
+  <text x="40" y="450" fill="#FFFFFF" font-size="14">하지만 association은</text>
+  <text x="40" y="475" fill="#FFFFFF" font-size="14">Console에서 수동 단계</text>
+  <text x="40" y="525" fill="#FF9900" font-size="13" font-weight="bold">⚡ Custom Resource로 자동화</text>
+  <text x="40" y="565" fill="#999999" font-size="12" font-style="italic">→ 처음 만든 사람만</text>
+  <text x="40" y="583" fill="#999999" font-size="12" font-style="italic">    아는 hidden step</text>
+
+  <!-- ============ Card 5: Relay Email (BM) ============ -->
+  <rect x="450" y="320" width="410" height="280" rx="10" fill="#1A2744" stroke="#E8562A" stroke-width="2.5"/>
+  <text x="470" y="355" fill="#E8562A" font-size="20" font-weight="bold">⚠  OTA Relay Email</text>
+  <line x1="470" y1="392" x2="840" y2="392" stroke="#E8562A" stroke-width="1" opacity="0.4"/>
+  <rect x="470" y="410" width="370" height="32" rx="4" fill="#161E2D"/>
+  <text x="482" y="431" fill="#E6EDF3" font-size="13">guest-abc123@booking.com</text>
+  <text x="470" y="475" fill="#FFFFFF" font-size="14">OTA가 발급한 임시 이메일</text>
+  <text x="470" y="500" fill="#FFFFFF" font-size="14">동일 고객도 매번 다른 값</text>
+  <text x="470" y="545" fill="#FF9900" font-size="13" font-weight="bold">⚡ Email 단독 매칭 불가</text>
+  <text x="470" y="572" fill="#999999" font-size="12" font-style="italic">→ Phone/Name 폴백 + relay 감지</text>
+  <text x="470" y="590" fill="#999999" font-size="12" font-style="italic">    isRelayEmail() 정규식 필요</text>
+
+  <!-- ============ Card 6: Neptune Cost (BR) ============ -->
+  <rect x="880" y="320" width="396" height="280" rx="10" fill="#1A2744" stroke="#E8562A" stroke-width="2.5"/>
+  <text x="900" y="355" fill="#E8562A" font-size="20" font-weight="bold">⚠  Neptune 최소 비용</text>
+  <line x1="900" y1="392" x2="1256" y2="392" stroke="#E8562A" stroke-width="1" opacity="0.4"/>
+  <text x="900" y="425" fill="#FFFFFF" font-size="14">db.r5.large 최소 인스턴스</text>
+  <text x="900" y="450" fill="#FFFFFF" font-size="22" font-weight="bold">~$420/month</text>
+  <text x="900" y="478" fill="#FFFFFF" font-size="14">+ NAT Gateway 추가</text>
+  <text x="900" y="500" fill="#FFFFFF" font-size="14">+ VPC 격리 비용</text>
+  <text x="900" y="545" fill="#FF9900" font-size="14" font-weight="bold">⚡ Graph 옵션 = +$300/월</text>
+  <text x="900" y="585" fill="#999999" font-size="12" font-style="italic">→ Serverless 옵션 ~$200/월</text>
+</svg>

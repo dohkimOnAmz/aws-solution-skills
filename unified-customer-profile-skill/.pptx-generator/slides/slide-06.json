@@ -1,0 +1,92 @@
+{
+  "type": "content",
+  "title": "Agent Skills 개방형 표준 : 코어 + 도구 확장",
+  "elements": [
+    {
+      "fn": "add_textbox",
+      "args": {
+        "x": "C1",
+        "y": "R1",
+        "w": "6-col",
+        "h": "1-row",
+        "text": "표준 + 확장 동심원",
+        "color_token": "ACCENT_TEAL",
+        "font_size_token": "BODY_XL",
+        "valign": "middle"
+      }
+    },
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-06-concentric-embedded.svg",
+        "x": "C1",
+        "y": "R2",
+        "w": "6-col",
+        "h": "11-row"
+      }
+    },
+    {
+      "fn": "add_textbox",
+      "args": {
+        "x": "C7",
+        "y": "R1",
+        "w": "6-col",
+        "h": "1-row",
+        "text": "표준 vs Claude Code 확장",
+        "color_token": "ACCENT_ORANGE",
+        "font_size_token": "BODY_XL",
+        "valign": "middle"
+      }
+    },
+    {
+      "fn": "add_table",
+      "args": {
+        "x": "C7",
+        "y": "R2",
+        "w": "6-col",
+        "h": "10-row",
+        "headers": ["기능", "표준", "Claude Code 확장"],
+        "rows": [
+          ["name, description", "✓", "✓"],
+          ["markdown 본문", "✓", "✓"],
+          ["disable-model-invocation", "—", "✓"],
+          ["allowed-tools", "—", "✓"],
+          ["context: fork + subagent", "—", "✓"],
+          ["!`<command>` 동적 주입", "—", "✓"],
+          ["4-tier 위치 (Enterprise → Plugin)", "—", "✓"]
+        ],
+        "style": "comparison",
+        "col_widths": [0.5, 0.2, 0.3]
+      }
+    },
+    {
+      "fn": "add_textbox",
+      "args": {
+        "x": "C7",
+        "y": "R12",
+        "w": "6-col",
+        "h": "1-row",
+        "padding": true,
+        "valign": "middle",
+        "runs": [
+          {
+            "text": "다른 도구도 표준 채택 시 ",
+            "color_token": "TEXT_WHITE",
+            "font_size_token": "BODY_M"
+          },
+          {
+            "text": "코어는 호환",
+            "color_token": "ACCENT_ORANGE",
+            "font_size_token": "BODY_M",
+            "bold": true
+          },
+          {
+            "text": " — 도구 lock-in 회피",
+            "color_token": "TEXT_WHITE",
+            "font_size_token": "BODY_M"
+          }
+        ]
+      }
+    }
+  ]
+}

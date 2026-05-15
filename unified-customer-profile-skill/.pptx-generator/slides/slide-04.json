@@ -1,0 +1,52 @@
+{
+  "type": "content",
+  "title": "채팅 반복의 한계 : Skill로 절차를 외부화",
+  "elements": [
+    {
+      "fn": "add_textbox",
+      "args": {
+        "x": "C1",
+        "y": "R1",
+        "w": "6-col",
+        "h": "1-row",
+        "text": "Before — 매 채팅마다 같은 지침 반복",
+        "color_token": "ACCENT_DEEP_ORANGE",
+        "font_size_token": "BODY_XL",
+        "valign": "middle"
+      }
+    },
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-04-before-embedded.svg",
+        "x": "C1",
+        "y": "R2",
+        "w": "6-col",
+        "h": "11-row"
+      }
+    },
+    {
+      "fn": "add_textbox",
+      "args": {
+        "x": "C7",
+        "y": "R1",
+        "w": "6-col",
+        "h": "1-row",
+        "text": "After — SKILL.md 한 번 작성, 호출 시만 로드",
+        "color_token": "ACCENT_TEAL",
+        "font_size_token": "BODY_XL",
+        "valign": "middle"
+      }
+    },
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-04-after-embedded.svg",
+        "x": "C7",
+        "y": "R2",
+        "w": "6-col",
+        "h": "11-row"
+      }
+    }
+  ]
+}

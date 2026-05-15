@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1296 624" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <defs>
+    <marker id="arrow-teal-19" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00A8A8"/>
+    </marker>
+    <marker id="arrow-orange-19" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF9900"/>
+    </marker>
+    <marker id="arrow-purple-19" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7B61FF"/>
+    </marker>
+  </defs>
+
+  <!-- ============ AWS Cloud 그룹 보더 ============ -->
+  <rect x="20" y="40" width="1256" height="540" rx="6" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="0"/>
+  <text x="40" y="32" fill="#FFFFFF" font-size="13" font-weight="bold">AWS Cloud  ·  Region : ap-northeast-2</text>
+
+  <!-- ============ Layer 1: Foundation (좌측 상단) ============ -->
+  <rect x="40" y="60" width="180" height="100" rx="6" fill="#161E2D" stroke="#5A6A7A" stroke-width="1.5"/>
+  <text x="50" y="78" fill="#999999" font-size="10" font-weight="bold">L1 Foundation</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Key-Management-Service_48.png" x="60" y="88" width="36" height="36"/>
+  <text x="78" y="140" text-anchor="middle" fill="#FFFFFF" font-size="9">KMS</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Simple-Queue-Service_48.png" x="148" y="88" width="36" height="36"/>
+  <text x="166" y="140" text-anchor="middle" fill="#FFFFFF" font-size="9">SQS DLQ</text>
+
+  <text x="130" y="155" text-anchor="middle" fill="#5A6A7A" font-size="9" font-style="italic">암호화 + 실패 큐</text>
+
+  <!-- ============ Layer 5: Ingestion (좌측 중앙) ============ -->
+  <rect x="40" y="180" width="180" height="120" rx="6" fill="#161E2D" stroke="#00A8A8" stroke-width="1.5"/>
+  <text x="50" y="198" fill="#00A8A8" font-size="10" font-weight="bold">L5 Ingestion (CSV)</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/general/Res_Document_48_Dark.png" x="55" y="210" width="32" height="32"/>
+  <text x="71" y="252" text-anchor="middle" fill="#FFFFFF" font-size="9">CSV</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Lambda_48.png" x="100" y="210" width="32" height="32"/>
+  <text x="116" y="252" text-anchor="middle" fill="#FFFFFF" font-size="9">Lambda</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Glue_48.png" x="146" y="210" width="32" height="32"/>
+  <text x="162" y="252" text-anchor="middle" fill="#FFFFFF" font-size="9">Glue</text>
+
+  <text x="130" y="285" text-anchor="middle" fill="#5A6A7A" font-size="9" font-style="italic">CSV → Lambda → Glue Table</text>
+
+  <!-- 화살표: Ingestion → Storage -->
+  <line x1="222" y1="220" x2="252" y2="220" stroke="#00A8A8" stroke-width="2" marker-end="url(#arrow-teal-19)"/>
+
+  <!-- ============ Layer 2: Storage (가운데 좌측) ============ -->
+  <rect x="255" y="180" width="160" height="120" rx="6" fill="#161E2D" stroke="#00A8A8" stroke-width="1.5"/>
+  <text x="265" y="198" fill="#00A8A8" font-size="10" font-weight="bold">L2 Storage</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Simple-Storage-Service_48.png" x="312" y="218" width="48" height="48"/>
+  <text x="335" y="284" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">S3 Bucket</text>
+  <text x="335" y="297" text-anchor="middle" fill="#5A6A7A" font-size="9" font-style="italic">KMS 암호화</text>
+
+  <!-- 화살표: Storage → Matching -->
+  <line x1="417" y1="240" x2="447" y2="240" stroke="#00A8A8" stroke-width="2" marker-end="url(#arrow-teal-19)"/>
+
+  <!-- ============ Layer 4: Matching (가운데) ============ -->
+  <rect x="450" y="180" width="220" height="180" rx="6" fill="#161E2D" stroke="#FF9900" stroke-width="2"/>
+  <text x="460" y="198" fill="#FF9900" font-size="10" font-weight="bold">L4 Matching</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Entity-Resolution_48.png" x="475" y="210" width="40" height="40"/>
+  <text x="495" y="262" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">ER Workflows</text>
+  <text x="495" y="275" text-anchor="middle" fill="#5A6A7A" font-size="9">Simple/Advanced/ML</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Glue_48.png" x="540" y="210" width="40" height="40"/>
+  <text x="560" y="262" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">Glue DB/Table</text>
+  <text x="560" y="275" text-anchor="middle" fill="#5A6A7A" font-size="9">ER 입력</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-DynamoDB_48.png" x="605" y="210" width="40" height="40"/>
+  <text x="625" y="262" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">DynamoDB</text>
+  <text x="625" y="275" text-anchor="middle" fill="#5A6A7A" font-size="9">결과 캐시</text>
+
+  <text x="560" y="298" text-anchor="middle" fill="#FF9900" font-size="9" font-style="italic">매칭 비동기 배치 (~5분/10K)</text>
+  <text x="560" y="318" text-anchor="middle" fill="#FF9900" font-size="9" font-style="italic">→ DDB 캐싱 → API 즉시 조회</text>
+  <text x="560" y="345" text-anchor="middle" fill="#999999" font-size="10" font-weight="bold">★ Bedrock이 ER 규칙 자동 생성</text>
+
+  <!-- 화살표: Matching → Profiles -->
+  <line x1="672" y1="240" x2="702" y2="240" stroke="#FF9900" stroke-width="2.5" marker-end="url(#arrow-orange-19)"/>
+
+  <!-- ============ Layer 3: Profiles (우측) ============ -->
+  <rect x="705" y="180" width="240" height="180" rx="6" fill="#161E2D" stroke="#FF9900" stroke-width="2"/>
+  <text x="715" y="198" fill="#FF9900" font-size="10" font-weight="bold">L3 Profiles</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Connect_48.png" x="725" y="210" width="40" height="40"/>
+  <text x="745" y="262" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">Connect Instance</text>
+  <text x="745" y="275" text-anchor="middle" fill="#5A6A7A" font-size="9">CP의 컨테이너</text>
+
+  <rect x="780" y="220" width="155" height="60" rx="4" fill="#1A2744" stroke="#FF9900" stroke-width="1"/>
+  <text x="857" y="242" text-anchor="middle" fill="#FF9900" font-size="11" font-weight="bold">Customer Profiles</text>
+  <text x="857" y="258" text-anchor="middle" fill="#999999" font-size="9">Domain</text>
+  <text x="857" y="272" text-anchor="middle" fill="#FFFFFF" font-size="9">Object Types · Calc Attrs</text>
+
+  <text x="825" y="305" text-anchor="middle" fill="#999999" font-size="9">100 Object Types · 200 Fields/type</text>
+  <text x="825" y="322" text-anchor="middle" fill="#999999" font-size="9">20 Calculated Attributes / domain</text>
+  <text x="825" y="340" text-anchor="middle" fill="#FF9900" font-size="9" font-style="italic">매칭 결과 → CP Import</text>
+
+  <!-- ============ Layer 7: API (우측 상단 별도) ============ -->
+  <rect x="970" y="60" width="290" height="150" rx="6" fill="#161E2D" stroke="#00A8A8" stroke-width="1.5"/>
+  <text x="980" y="78" fill="#00A8A8" font-size="10" font-weight="bold">L7 API</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-API-Gateway_48.png" x="990" y="90" width="40" height="40"/>
+  <text x="1010" y="142" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">API Gateway</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Lambda_48.png" x="1075" y="90" width="40" height="40"/>
+  <text x="1095" y="142" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">Lambda Handlers</text>
+  <text x="1095" y="156" text-anchor="middle" fill="#5A6A7A" font-size="9">Matching/Profiles/AI</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Cognito_48.png" x="1175" y="90" width="40" height="40"/>
+  <text x="1195" y="142" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">Cognito</text>
+  <text x="1195" y="156" text-anchor="middle" fill="#5A6A7A" font-size="9">L6 Auth</text>
+
+  <text x="1115" y="195" text-anchor="middle" fill="#5A6A7A" font-size="9" font-style="italic">JWT 토큰 검증 + 5+ Lambda 핸들러</text>
+
+  <!-- ============ Bedrock (우측 중앙) ============ -->
+  <rect x="970" y="220" width="290" height="80" rx="6" fill="#161E2D" stroke="#7B61FF" stroke-width="1.5"/>
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Bedrock_48.png" x="985" y="232" width="48" height="48"/>
+  <text x="1009" y="295" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">Bedrock</text>
+  <text x="1180" y="245" text-anchor="middle" fill="#7B61FF" font-size="11" font-weight="bold">Anthropic Claude</text>
+  <text x="1180" y="262" text-anchor="middle" fill="#FFFFFF" font-size="10">apac.anthropic.claude-sonnet-4</text>
+  <text x="1180" y="282" text-anchor="middle" fill="#999999" font-size="9" font-style="italic">ER 규칙 생성·개선 + AI Agent</text>
+
+  <!-- API → CP 화살표 -->
+  <line x1="1075" y1="180" x2="1000" y2="218" stroke="#00A8A8" stroke-width="2" marker-end="url(#arrow-teal-19)"/>
+  <line x1="945" y1="220" x2="975" y2="200" stroke="#00A8A8" stroke-width="2"/>
+
+  <!-- Lambda → Bedrock -->
+  <line x1="1095" y1="195" x2="1009" y2="240" stroke="#7B61FF" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrow-purple-19)"/>
+
+  <!-- ============ Frontend (하단 좌측) ============ -->
+  <rect x="40" y="380" width="380" height="120" rx="6" fill="#161E2D" stroke="#5A6A7A" stroke-width="1.5"/>
+  <text x="50" y="398" fill="#999999" font-size="10" font-weight="bold">Frontend  (사용자 콘솔)</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-CloudFront_48.png" x="55" y="410" width="40" height="40"/>
+  <text x="75" y="463" text-anchor="middle" fill="#FFFFFF" font-size="10">CloudFront</text>
+
+  <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Simple-Storage-Service_48.png" x="120" y="410" width="40" height="40"/>
+  <text x="140" y="463" text-anchor="middle" fill="#FFFFFF" font-size="10">S3 Static</text>
+
+  <text x="220" y="430" fill="#FFFFFF" font-size="11" font-weight="bold">React 18 + Vite</text>
+  <text x="220" y="448" fill="#FFFFFF" font-size="11">+ Cloudscape Design System</text>
+  <text x="220" y="466" fill="#999999" font-size="10" font-style="italic">+ Cognito Hosted UI</text>
+  <text x="220" y="486" fill="#999999" font-size="10" font-style="italic">+ react-router-dom v6</text>
+
+  <!-- Frontend → API 화살표 -->
+  <path d="M 420 410 Q 700 380 990 130" fill="none" stroke="#00A8A8" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-teal-19)"/>
+  <text x="690" y="375" text-anchor="middle" fill="#00A8A8" font-size="10" font-style="italic">HTTPS + JWT</text>
+
+  <!-- ============ 옵션 OFF 표시 (하단 우측) ============ -->
+  <rect x="450" y="380" width="380" height="180" rx="6" fill="#1A2744" stroke="#5A6A7A" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="640" y="408" text-anchor="middle" fill="#5A6A7A" font-size="13" font-weight="bold">[ 옵션 OFF — Minimal 구성 ]</text>
+  <line x1="470" y1="420" x2="810" y2="420" stroke="#5A6A7A" stroke-width="1" opacity="0.4"/>
+
+  <text x="470" y="445" fill="#5A6A7A" font-size="11">  ✗ ETL Transform (Glue Job)</text>
+  <text x="470" y="465" fill="#5A6A7A" font-size="11">  ✗ Knowledge Graph (Neptune)</text>
+  <text x="470" y="485" fill="#5A6A7A" font-size="11">  ✗ Cross-Domain (멀티 CP Domain)</text>
+  <text x="470" y="505" fill="#5A6A7A" font-size="11">  ✗ ML Matching</text>
+  <text x="470" y="525" fill="#5A6A7A" font-size="11">  ✗ Kinesis 실시간 / Parquet 대용량</text>
+  <text x="640" y="552" text-anchor="middle" fill="#999999" font-size="11" font-style="italic">→ 다음 슬라이드: 옵션 켜면 어떻게 변하나</text>
+
+  <!-- ============ 비용 박스 (하단 우측) ============ -->
+  <rect x="860" y="380" width="400" height="180" rx="6" fill="#161E2D" stroke="#FF9900" stroke-width="2.5"/>
+  <text x="1060" y="408" text-anchor="middle" fill="#FF9900" font-size="14" font-weight="bold">Minimal 비용 추정</text>
+  <line x1="880" y1="420" x2="1240" y2="420" stroke="#FF9900" stroke-width="1" opacity="0.4"/>
+
+  <text x="880" y="445" fill="#FFFFFF" font-size="11">CP Domain</text>
+  <text x="1240" y="445" text-anchor="end" fill="#999999" font-size="11">~$0 (프로필 적을 때)</text>
+
+  <text x="880" y="463" fill="#FFFFFF" font-size="11">Entity Resolution</text>
+  <text x="1240" y="463" text-anchor="end" fill="#999999" font-size="11">~$5  (20K rec × 주 1)</text>
+
+  <text x="880" y="481" fill="#FFFFFF" font-size="11">S3 + DynamoDB + Lambda</text>
+  <text x="1240" y="481" text-anchor="end" fill="#999999" font-size="11">~$10</text>
+
+  <text x="880" y="499" fill="#FFFFFF" font-size="11">API Gateway + Cognito</text>
+  <text x="1240" y="499" text-anchor="end" fill="#999999" font-size="11">~$5</text>
+
+  <text x="880" y="517" fill="#FFFFFF" font-size="11">Bedrock (Claude Sonnet)</text>
+  <text x="1240" y="517" text-anchor="end" fill="#999999" font-size="11">~$10  (사용량 비례)</text>
+
+  <line x1="880" y1="525" x2="1240" y2="525" stroke="#FF9900" stroke-width="1"/>
+  <text x="880" y="545" fill="#FF9900" font-size="13" font-weight="bold">월 합계</text>
+  <text x="1240" y="550" text-anchor="end" fill="#FF9900" font-size="20" font-weight="bold">~$50 - 100</text>
+</svg>

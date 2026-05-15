@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1296 624" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <defs>
+    <marker id="arr-25" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C8C832"/>
+    </marker>
+  </defs>
+
+  <!-- 시간축 -->
+  <line x1="40" y1="40" x2="1256" y2="40" stroke="#5A6A7A" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="40" y="32" fill="#999999" font-size="12" font-style="italic">⏱ Day 0</text>
+  <text x="220" y="32" text-anchor="middle" fill="#999999" font-size="12" font-style="italic">+ 1주</text>
+  <text x="648" y="32" text-anchor="middle" fill="#999999" font-size="12" font-style="italic">+ 3주</text>
+  <text x="1256" y="32" text-anchor="end" fill="#999999" font-size="12" font-style="italic">+ 4-8주 (총 ~10주)</text>
+
+  <!-- Stage 1: PoC -->
+  <rect x="20" y="60" width="412" height="500" rx="12" fill="#1A2744" stroke="#C8C832" stroke-width="2"/>
+  <rect x="20" y="60" width="412" height="80" rx="12" fill="#C8C832"/>
+  <text x="226" y="100" text-anchor="middle" fill="#161E2D" font-size="20" font-weight="bold">Stage 1 :  PoC</text>
+  <text x="226" y="125" text-anchor="middle" fill="#161E2D" font-size="14" font-weight="bold">⏱ 1주</text>
+
+  <text x="40" y="170" fill="#C8C832" font-size="13" font-weight="bold">목표</text>
+  <text x="40" y="195" fill="#FFFFFF" font-size="11">Skill 도입 검증 + 팀 학습</text>
+  <text x="40" y="215" fill="#999999" font-size="10" font-style="italic">"이 Skill로 우리 데이터 위에서</text>
+  <text x="40" y="231" fill="#999999" font-size="10" font-style="italic">  UCP가 만들어질 수 있나?"</text>
+
+  <text x="40" y="265" fill="#C8C832" font-size="13" font-weight="bold">산출물</text>
+  <text x="40" y="290" fill="#E6EDF3" font-size="11">  ✓ Discovery 답변 (10 질문)</text>
+  <text x="40" y="310" fill="#E6EDF3" font-size="11">  ✓ 아키텍처 결정 + 다이어그램</text>
+  <text x="40" y="330" fill="#E6EDF3" font-size="11">  ✓ 비용 추정 (티어)</text>
+  <text x="40" y="350" fill="#E6EDF3" font-size="11">  ✓ cdk synth 초기 통과</text>
+
+  <text x="40" y="385" fill="#C8C832" font-size="13" font-weight="bold">검증 항목</text>
+  <text x="40" y="410" fill="#E6EDF3" font-size="11">  ✓ 도구 import 1분 내</text>
+  <text x="40" y="430" fill="#E6EDF3" font-size="11">  ✓ 1차 코드 생성 성공</text>
+  <text x="40" y="450" fill="#E6EDF3" font-size="11">  ✓ 14개 함정 회피</text>
+  <text x="40" y="470" fill="#999999" font-size="10" font-style="italic">    (Connect quota, apac. 등)</text>
+
+  <rect x="40" y="495" width="372" height="50" rx="6" fill="#161E2D" stroke="#C8C832" stroke-width="1.5"/>
+  <text x="60" y="518" fill="#FFFFFF" font-size="11">⛔ 게이트</text>
+  <text x="392" y="518" text-anchor="end" fill="#C8C832" font-size="13" font-weight="bold">MVP 진행 결정</text>
+  <text x="60" y="538" fill="#999999" font-size="10">비용</text>
+  <text x="392" y="538" text-anchor="end" fill="#C8C832" font-size="12" font-weight="bold">$0 - 50</text>
+
+  <!-- 화살표 1 → 2 -->
+  <line x1="437" y1="310" x2="447" y2="310" stroke="#C8C832" stroke-width="3" marker-end="url(#arr-25)"/>
+
+  <!-- Stage 2: MVP -->
+  <rect x="450" y="60" width="396" height="500" rx="12" fill="#1A2744" stroke="#FF9900" stroke-width="2"/>
+  <rect x="450" y="60" width="396" height="80" rx="12" fill="#FF9900"/>
+  <text x="648" y="100" text-anchor="middle" fill="#161E2D" font-size="20" font-weight="bold">Stage 2 :  MVP</text>
+  <text x="648" y="125" text-anchor="middle" fill="#161E2D" font-size="14" font-weight="bold">⏱ 2주</text>
+
+  <text x="470" y="170" fill="#FF9900" font-size="13" font-weight="bold">목표</text>
+  <text x="470" y="195" fill="#FFFFFF" font-size="11">1개 산업 도메인 Minimal 배포</text>
+  <text x="470" y="215" fill="#999999" font-size="10" font-style="italic">dev 환경에서 실제 ER + 매칭 검증</text>
+
+  <text x="470" y="250" fill="#FF9900" font-size="13" font-weight="bold">산출물</text>
+  <text x="470" y="275" fill="#E6EDF3" font-size="11">  ✓ CDK 코드 전체 (lib/, bin/)</text>
+  <text x="470" y="295" fill="#E6EDF3" font-size="11">  ✓ Lambda Handlers × 6+</text>
+  <text x="470" y="315" fill="#E6EDF3" font-size="11">  ✓ Frontend (React + Cloudscape)</text>
+  <text x="470" y="335" fill="#E6EDF3" font-size="11">  ✓ cdk synth 통과 (CRITICAL 0)</text>
+  <text x="470" y="355" fill="#E6EDF3" font-size="11">  ✓ dev 환경 배포 완료</text>
+  <text x="470" y="375" fill="#E6EDF3" font-size="11">  ✓ 1개 산업 examples/ 활용</text>
+
+  <text x="470" y="410" fill="#FF9900" font-size="13" font-weight="bold">검증 항목</text>
+  <text x="470" y="435" fill="#E6EDF3" font-size="11">  ✓ ER 정확도 (precision &gt; 0.85)</text>
+  <text x="470" y="455" fill="#E6EDF3" font-size="11">  ✓ HITL 검증 1회차 통과</text>
+  <text x="470" y="475" fill="#E6EDF3" font-size="11">  ✓ 프론트엔드 동작</text>
+
+  <rect x="470" y="495" width="356" height="50" rx="6" fill="#161E2D" stroke="#FF9900" stroke-width="1.5"/>
+  <text x="490" y="518" fill="#FFFFFF" font-size="11">⛔ 게이트</text>
+  <text x="806" y="518" text-anchor="end" fill="#FF9900" font-size="13" font-weight="bold">프로덕션 결정</text>
+  <text x="490" y="538" fill="#999999" font-size="10">비용 (1개월)</text>
+  <text x="806" y="538" text-anchor="end" fill="#FF9900" font-size="12" font-weight="bold">$50 - 100</text>
+
+  <!-- 화살표 2 → 3 -->
+  <line x1="851" y1="310" x2="861" y2="310" stroke="#C8C832" stroke-width="3" marker-end="url(#arr-25)"/>
+
+  <!-- Stage 3: Production -->
+  <rect x="864" y="60" width="412" height="500" rx="12" fill="#1A2744" stroke="#FF4D8B" stroke-width="2.5"/>
+  <rect x="864" y="60" width="412" height="80" rx="12" fill="#FF4D8B"/>
+  <text x="1070" y="100" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="bold">Stage 3 :  Production</text>
+  <text x="1070" y="125" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">⏱ 4-8주</text>
+
+  <text x="884" y="170" fill="#FF4D8B" font-size="13" font-weight="bold">목표</text>
+  <text x="884" y="195" fill="#FFFFFF" font-size="11">프로덕션 운영 + 옵션 확장</text>
+  <text x="884" y="215" fill="#999999" font-size="10" font-style="italic">Standard / Full 티어 + 모니터링</text>
+
+  <text x="884" y="250" fill="#FF4D8B" font-size="13" font-weight="bold">산출물</text>
+  <text x="884" y="275" fill="#E6EDF3" font-size="11">  ✓ 모든 옵션 활성 (필요 시)</text>
+  <text x="884" y="295" fill="#E6EDF3" font-size="11">  ✓ CI/CD 파이프라인</text>
+  <text x="884" y="315" fill="#E6EDF3" font-size="11">  ✓ 운영 룰북 (operations.md)</text>
+  <text x="884" y="335" fill="#E6EDF3" font-size="11">  ✓ 스케일·DR 전략</text>
+  <text x="884" y="355" fill="#E6EDF3" font-size="11">  ✓ CloudWatch 대시보드</text>
+  <text x="884" y="375" fill="#E6EDF3" font-size="11">  ✓ 비용 최적화 검토</text>
+
+  <text x="884" y="410" fill="#FF4D8B" font-size="13" font-weight="bold">검증 항목</text>
+  <text x="884" y="435" fill="#E6EDF3" font-size="11">  ✓ SLO 충족 (가용성 99.9%+)</text>
+  <text x="884" y="455" fill="#E6EDF3" font-size="11">  ✓ 비용 SLO + 보안 감사</text>
+  <text x="884" y="475" fill="#E6EDF3" font-size="11">  ✓ 데이터 정합성 (HITL 정상)</text>
+
+  <rect x="884" y="495" width="372" height="50" rx="6" fill="#161E2D" stroke="#FF4D8B" stroke-width="1.5"/>
+  <text x="904" y="518" fill="#FFFFFF" font-size="11">⛔ 게이트</text>
+  <text x="1236" y="518" text-anchor="end" fill="#FF4D8B" font-size="13" font-weight="bold">옵션 확장 결정</text>
+  <text x="904" y="538" fill="#999999" font-size="10">월 비용</text>
+  <text x="1236" y="538" text-anchor="end" fill="#FF4D8B" font-size="12" font-weight="bold">$50 - 600 (티어별)</text>
+
+  <!-- 하단 메시지 -->
+  <text x="648" y="600" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">단계마다 명확한 산출물 + 게이트  ·  중간에 멈출 수 있는 안전한 도입</text>
+
+</svg>

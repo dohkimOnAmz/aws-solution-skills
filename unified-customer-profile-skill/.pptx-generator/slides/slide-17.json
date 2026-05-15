@@ -1,0 +1,16 @@
+{
+  "type": "content",
+  "title": "산업별 레퍼런스 : 신규 도메인 = examples/ 한 장",
+  "elements": [
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-17-industries-embedded.svg",
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "12-row"
+      }
+    }
+  ]
+}

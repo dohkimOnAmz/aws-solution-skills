@@ -1,0 +1,16 @@
+{
+  "type": "content",
+  "title": "ER 규칙 : Bedrock이 만들고, 사람은 검증한다 (HITL)",
+  "elements": [
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-13-hitl-embedded.svg",
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "12-row"
+      }
+    }
+  ]
+}

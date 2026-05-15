@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1296 624" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <defs>
+    <marker id="arrow-orange-16" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF9900"/>
+    </marker>
+  </defs>
+
+  <!-- 시간축 -->
+  <line x1="40" y1="40" x2="1256" y2="40" stroke="#5A6A7A" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="40" y="32" fill="#999999" font-size="12" font-style="italic">⏱ 0분</text>
+  <text x="270" y="32" text-anchor="middle" fill="#999999" font-size="12" font-style="italic">~10분</text>
+  <text x="510" y="32" text-anchor="middle" fill="#999999" font-size="12" font-style="italic">~15분</text>
+  <text x="750" y="32" text-anchor="middle" fill="#999999" font-size="12" font-style="italic">~25분</text>
+  <text x="990" y="32" text-anchor="middle" fill="#999999" font-size="12" font-style="italic">~28분</text>
+  <text x="1245" y="32" text-anchor="end" fill="#999999" font-size="12" font-style="italic">~58분</text>
+
+  <!-- ============ Stage 1: Discovery ============ -->
+  <rect x="40" y="60" width="220" height="500" rx="10" fill="#1A2744" stroke="#FF9900" stroke-width="2"/>
+  <rect x="40" y="60" width="220" height="60" rx="10" fill="#FF9900"/>
+  <text x="150" y="90" text-anchor="middle" fill="#161E2D" font-size="16" font-weight="bold">Discovery</text>
+  <text x="150" y="108" text-anchor="middle" fill="#161E2D" font-size="11" font-style="italic">사용자 입력</text>
+
+  <text x="60" y="155" fill="#FF9900" font-size="13" font-weight="bold">사용자가 답할 것:</text>
+  <text x="60" y="180" fill="#FFFFFF" font-size="11">  1. 산업·도메인</text>
+  <text x="60" y="200" fill="#FFFFFF" font-size="11">  2. 채널 (Web/App/...)</text>
+  <text x="60" y="220" fill="#FFFFFF" font-size="11">  3. PII 필드</text>
+  <text x="60" y="240" fill="#FFFFFF" font-size="11">  4. 거래 데이터 종류</text>
+  <text x="60" y="260" fill="#FFFFFF" font-size="11">  5. KPI / 핵심 지표</text>
+  <text x="60" y="280" fill="#FFFFFF" font-size="11">  6. 데이터 소스 위치</text>
+  <text x="60" y="300" fill="#FFFFFF" font-size="11">  7. 매칭 전략</text>
+  <text x="60" y="320" fill="#FFFFFF" font-size="11">  8. Graph / Cross-Dom?</text>
+  <text x="60" y="340" fill="#FFFFFF" font-size="11">  9. 리전 / 비용</text>
+  <text x="60" y="360" fill="#FFFFFF" font-size="11">  10. PII 정규화 필요?</text>
+
+  <line x1="60" y1="380" x2="240" y2="380" stroke="#5A6A7A" stroke-width="1" opacity="0.4"/>
+  <text x="60" y="405" fill="#999999" font-size="11" font-style="italic">Skill: 한 메시지에</text>
+  <text x="60" y="423" fill="#999999" font-size="11" font-style="italic">10 질문 일괄 제시</text>
+
+  <rect x="40" y="510" width="220" height="50" rx="0" fill="#161E2D"/>
+  <text x="150" y="530" text-anchor="middle" fill="#FF9900" font-size="13" font-weight="bold">⛔ GATE 1</text>
+  <text x="150" y="548" text-anchor="middle" fill="#999999" font-size="11">요구사항 확정</text>
+
+  <line x1="265" y1="285" x2="285" y2="285" stroke="#FF9900" stroke-width="2" marker-end="url(#arrow-orange-16)"/>
+
+  <!-- ============ Stage 2: Design ============ -->
+  <rect x="290" y="60" width="220" height="500" rx="10" fill="#1A2744" stroke="#FF9900" stroke-width="2"/>
+  <rect x="290" y="60" width="220" height="60" rx="10" fill="#FF9900"/>
+  <text x="400" y="90" text-anchor="middle" fill="#161E2D" font-size="16" font-weight="bold">Design</text>
+  <text x="400" y="108" text-anchor="middle" fill="#161E2D" font-size="11" font-style="italic">Skill 자동 결정</text>
+
+  <text x="310" y="155" fill="#FF9900" font-size="13" font-weight="bold">Skill이 결정:</text>
+  <text x="310" y="185" fill="#FFFFFF" font-size="11">• 9-레이어 구성</text>
+  <text x="310" y="205" fill="#FFFFFF" font-size="11">• Pipeline 모드 선택</text>
+  <text x="310" y="225" fill="#FFFFFF" font-size="11">• ER 매칭 규칙 (Bedrock)</text>
+  <text x="310" y="245" fill="#FFFFFF" font-size="11">• Graph / Cross 결정</text>
+  <text x="310" y="265" fill="#FFFFFF" font-size="11">• 비용 추정 (티어)</text>
+  <text x="310" y="285" fill="#FFFFFF" font-size="11">• 리전 가용성 검증</text>
+  <text x="310" y="305" fill="#FFFFFF" font-size="11">• AWS Knowledge MCP</text>
+
+  <line x1="310" y1="330" x2="490" y2="330" stroke="#5A6A7A" stroke-width="1" opacity="0.4"/>
+  <text x="310" y="355" fill="#999999" font-size="11" font-style="italic">사용자: 다이어그램</text>
+  <text x="310" y="373" fill="#999999" font-size="11" font-style="italic">+ 비용 표 검토</text>
+
+  <rect x="290" y="510" width="220" height="50" rx="0" fill="#161E2D"/>
+  <text x="400" y="530" text-anchor="middle" fill="#FF9900" font-size="13" font-weight="bold">⛔ GATE 2</text>
+  <text x="400" y="548" text-anchor="middle" fill="#999999" font-size="11">설계 확정</text>
+
+  <line x1="515" y1="285" x2="535" y2="285" stroke="#FF9900" stroke-width="2" marker-end="url(#arrow-orange-16)"/>
+
+  <!-- ============ Stage 3: Generate ============ -->
+  <rect x="540" y="60" width="220" height="500" rx="10" fill="#1A2744" stroke="#FF9900" stroke-width="2"/>
+  <rect x="540" y="60" width="220" height="60" rx="10" fill="#FF9900"/>
+  <text x="650" y="90" text-anchor="middle" fill="#161E2D" font-size="16" font-weight="bold">Generate</text>
+  <text x="650" y="108" text-anchor="middle" fill="#161E2D" font-size="11" font-style="italic">Skill 코드 생성</text>
+
+  <text x="560" y="155" fill="#FF9900" font-size="13" font-weight="bold">점진 생성 5단계:</text>
+  <text x="560" y="185" fill="#FFFFFF" font-size="12">① bin/ + package.json</text>
+  <text x="560" y="210" fill="#FFFFFF" font-size="12">② lib/ CDK Stack ×8+</text>
+  <text x="560" y="235" fill="#FFFFFF" font-size="12">③ backend/lambdas/ ×6</text>
+  <text x="560" y="260" fill="#FFFFFF" font-size="12">④ frontend/ React+Vite</text>
+  <text x="560" y="285" fill="#FFFFFF" font-size="12">⑤ scripts/deploy.sh</text>
+
+  <line x1="560" y1="310" x2="740" y2="310" stroke="#5A6A7A" stroke-width="1" opacity="0.4"/>
+  <text x="560" y="335" fill="#999999" font-size="11" font-style="italic">Core → Matching →</text>
+  <text x="560" y="353" fill="#999999" font-size="11" font-style="italic">Enrichment → Graph 순</text>
+  <text x="560" y="385" fill="#999999" font-size="11" font-style="italic">사용자: 단계별 코드</text>
+  <text x="560" y="403" fill="#999999" font-size="11" font-style="italic">스니펫 검토 가능</text>
+
+  <rect x="540" y="510" width="220" height="50" rx="0" fill="#161E2D"/>
+  <text x="650" y="530" text-anchor="middle" fill="#FF9900" font-size="13" font-weight="bold">⛔ GATE 3</text>
+  <text x="650" y="548" text-anchor="middle" fill="#999999" font-size="11">코드 검토</text>
+
+  <line x1="765" y1="285" x2="785" y2="285" stroke="#FF9900" stroke-width="2" marker-end="url(#arrow-orange-16)"/>
+
+  <!-- ============ Stage 4: Validate ============ -->
+  <rect x="790" y="60" width="220" height="500" rx="10" fill="#1A2744" stroke="#FF9900" stroke-width="2"/>
+  <rect x="790" y="60" width="220" height="60" rx="10" fill="#FF9900"/>
+  <text x="900" y="90" text-anchor="middle" fill="#161E2D" font-size="16" font-weight="bold">Validate</text>
+  <text x="900" y="108" text-anchor="middle" fill="#161E2D" font-size="11" font-style="italic">Skill 자동 검증</text>
+
+  <text x="810" y="155" fill="#FF9900" font-size="13" font-weight="bold">자동 검증:</text>
+  <text x="810" y="185" fill="#FFFFFF" font-size="12">• cdk synth 통과</text>
+  <text x="810" y="210" fill="#FFFFFF" font-size="12">• AWS Knowledge MCP</text>
+  <text x="810" y="232" fill="#999999" font-size="11">  (API 유효성)</text>
+  <text x="810" y="260" fill="#FFFFFF" font-size="12">• CloudFormation MCP</text>
+  <text x="810" y="282" fill="#999999" font-size="11">  (템플릿 검증)</text>
+  <text x="810" y="310" fill="#FFFFFF" font-size="12">• IAM 최소 권한 검증</text>
+  <text x="810" y="335" fill="#FFFFFF" font-size="12">• 순환 의존성 검사</text>
+
+  <line x1="810" y1="360" x2="990" y2="360" stroke="#5A6A7A" stroke-width="1" opacity="0.4"/>
+  <text x="810" y="385" fill="#999999" font-size="11" font-style="italic">CRITICAL 0건까지</text>
+  <text x="810" y="403" fill="#999999" font-size="11" font-style="italic">자동 수정 반복</text>
+
+  <rect x="790" y="510" width="220" height="50" rx="0" fill="#161E2D"/>
+  <text x="900" y="530" text-anchor="middle" fill="#FF9900" font-size="13" font-weight="bold">⛔ GATE 4</text>
+  <text x="900" y="548" text-anchor="middle" fill="#999999" font-size="11">검증 통과</text>
+
+  <line x1="1015" y1="285" x2="1035" y2="285" stroke="#00A8A8" stroke-width="2" marker-end="url(#arrow-orange-16)"/>
+
+  <!-- ============ Stage 5: Deploy ============ -->
+  <rect x="1040" y="60" width="216" height="500" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2.5"/>
+  <rect x="1040" y="60" width="216" height="60" rx="10" fill="#00A8A8"/>
+  <text x="1148" y="90" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">Deploy</text>
+  <text x="1148" y="108" text-anchor="middle" fill="#FFFFFF" font-size="11" font-style="italic">사용자 실행</text>
+
+  <text x="1060" y="155" fill="#00A8A8" font-size="13" font-weight="bold">사용자가 실행:</text>
+  <text x="1060" y="185" fill="#FFFFFF" font-size="12">• ./deploy.sh</text>
+  <text x="1060" y="210" fill="#FFFFFF" font-size="12">• 콘솔 수동 단계</text>
+  <text x="1060" y="232" fill="#999999" font-size="11">  (Connect ↔ CP)</text>
+  <text x="1060" y="260" fill="#FFFFFF" font-size="12">• 데이터 첫 적재</text>
+  <text x="1060" y="285" fill="#FFFFFF" font-size="12">• ER 첫 실행</text>
+  <text x="1060" y="310" fill="#FFFFFF" font-size="12">• HITL 검증 1회차</text>
+
+  <line x1="1060" y1="335" x2="1240" y2="335" stroke="#5A6A7A" stroke-width="1" opacity="0.4"/>
+  <text x="1060" y="360" fill="#999999" font-size="11" font-style="italic">Skill: 단계별 안내</text>
+  <text x="1060" y="378" fill="#999999" font-size="11" font-style="italic">+ 트러블슈팅 도움</text>
+
+  <rect x="1040" y="510" width="216" height="50" rx="0" fill="#161E2D"/>
+  <text x="1148" y="530" text-anchor="middle" fill="#00A8A8" font-size="13" font-weight="bold">✓ UCP 가동</text>
+  <text x="1148" y="548" text-anchor="middle" fill="#999999" font-size="11">베타 운영 시작</text>
+
+  <!-- ============ 하단 요약 ============ -->
+  <text x="648" y="600" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">사용자는 답하고 결정만 ·  Skill은 분석·생성·검증·안내</text>
+</svg>

@@ -1,0 +1,50 @@
+{
+  "type": "content",
+  "title": "CLAUDE.md vs SKILL.md : 상시·지연 로드의 분업",
+  "elements": [
+    {
+      "fn": "add_table",
+      "args": {
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "8-row",
+        "headers": ["항목", "CLAUDE.md", "SKILL.md"],
+        "rows": [
+          ["로드 시점", "세션 시작 시 항상", "호출될 때만 (lazy)"],
+          ["토큰 비용", "모든 턴마다 부과", "호출 시에만 부과 (≈0)"],
+          ["적합 콘텐츠", "사실, 컨벤션, 프로젝트 컨텍스트", "절차, 다단계 워크플로우, 도구 모음"],
+          ["갱신 빈도", "낮음 (사실 위주)", "자유 (lazy 비용이라 부담 없음)"],
+          ["대표 예시", "이 프로젝트는 TypeScript + ESLint 사용", "/deploy : 빌드 → 테스트 → 배포 워크플로우"],
+          ["호출 방식", "자동 (항상)", "/skill-name 또는 자동 매칭"]
+        ],
+        "style": "comparison",
+        "col_widths": [0.2, 0.4, 0.4]
+      }
+    },
+    {
+      "fn": "add_textbox",
+      "args": {
+        "x": "C1",
+        "y": "R10",
+        "w": "12-col",
+        "h": "3-row",
+        "padding": true,
+        "valign": "middle",
+        "runs": [
+          {
+            "text": "\"CLAUDE.md의 섹션이 사실이 아닌 절차로 성장하면, 그것은 SKILL.md로 옮겨야 한다는 신호.\"\n",
+            "color_token": "ACCENT_TEAL",
+            "font_size_token": "SUBTITLE_S",
+            "bold": true
+          },
+          {
+            "text": "— Anthropic Claude Code 공식 문서",
+            "color_token": "TEXT_GRAY",
+            "font_size_token": "BODY_M"
+          }
+        ]
+      }
+    }
+  ]
+}

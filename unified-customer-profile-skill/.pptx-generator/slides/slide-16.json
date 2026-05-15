@@ -1,0 +1,16 @@
+{
+  "type": "content",
+  "title": "Discovery → Deploy : 답·결정만, 나머지는 Skill",
+  "elements": [
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-16-workflow-embedded.svg",
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "12-row"
+      }
+    }
+  ]
+}

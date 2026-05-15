@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1296 624" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <defs>
+    <marker id="arrow-teal-13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00A8A8"/>
+    </marker>
+    <marker id="arrow-orange-13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF9900"/>
+    </marker>
+    <marker id="arrow-rose-13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF4D8B"/>
+    </marker>
+  </defs>
+
+  <!-- ============ Step 1: 데이터 프로파일링 ============ -->
+  <rect x="30" y="60" width="220" height="150" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2"/>
+  <text x="140" y="95" text-anchor="middle" fill="#00A8A8" font-size="16" font-weight="bold">1. 데이터 프로파일링</text>
+  <line x1="50" y1="105" x2="230" y2="105" stroke="#00A8A8" stroke-width="1" opacity="0.4"/>
+  <text x="140" y="130" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="bold">Bedrock 분석</text>
+  <text x="50" y="155" fill="#E6EDF3" font-size="12">  • nullRate, uniqueRate</text>
+  <text x="50" y="175" fill="#E6EDF3" font-size="12">  • 변형 패턴 탐지</text>
+  <text x="50" y="195" fill="#E6EDF3" font-size="12">  • 채널 분포</text>
+
+  <!-- 화살표 1 → 2 -->
+  <line x1="255" y1="135" x2="305" y2="135" stroke="#00A8A8" stroke-width="2.5" marker-end="url(#arrow-teal-13)"/>
+
+  <!-- ============ Step 2: AI 규칙 자동 생성 ============ -->
+  <rect x="310" y="60" width="240" height="150" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2"/>
+  <text x="430" y="95" text-anchor="middle" fill="#00A8A8" font-size="16" font-weight="bold">2. AI 규칙 자동 생성</text>
+  <line x1="330" y1="105" x2="530" y2="105" stroke="#00A8A8" stroke-width="1" opacity="0.4"/>
+  <text x="430" y="130" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="bold">Bedrock JSON 출력</text>
+  <text x="330" y="155" fill="#E6EDF3" font-size="11">  ruleName, matchingKeys</text>
+  <text x="330" y="173" fill="#E6EDF3" font-size="11">  rationale, estPrecision</text>
+  <text x="330" y="191" fill="#E6EDF3" font-size="11">  estRecall, warnings</text>
+
+  <!-- 화살표 2 → 3 (강조) -->
+  <line x1="555" y1="135" x2="605" y2="135" stroke="#FF9900" stroke-width="3" marker-end="url(#arrow-orange-13)"/>
+
+  <!-- ============ Step 3: HITL 검증 (강조) ============ -->
+  <rect x="610" y="40" width="320" height="190" rx="12" fill="#161E2D" stroke="#FF9900" stroke-width="3"/>
+  <text x="770" y="75" text-anchor="middle" fill="#FF9900" font-size="18" font-weight="bold">3. HITL 검증</text>
+  <text x="770" y="95" text-anchor="middle" fill="#FF9900" font-size="11" font-style="italic">★ 사용자 게이트 ★</text>
+  <line x1="630" y1="105" x2="910" y2="105" stroke="#FF9900" stroke-width="1" opacity="0.5"/>
+  <text x="630" y="130" fill="#FFFFFF" font-size="13">  ✓ 매칭 쌍 미리보기</text>
+  <text x="630" y="153" fill="#FFFFFF" font-size="13">  ✓ 예상 precision / recall</text>
+  <text x="630" y="176" fill="#FFFFFF" font-size="13">  ✓ false positive 경고</text>
+  <text x="630" y="199" fill="#FFFFFF" font-size="13">  ✓ 소규모 테스트 실행</text>
+  <text x="770" y="222" text-anchor="middle" fill="#FF9900" font-size="12" font-style="italic">→ 승인 or 거부 / 수정</text>
+
+  <!-- 화살표 3 → 4 (승인 분기) -->
+  <line x1="935" y1="135" x2="985" y2="135" stroke="#00A8A8" stroke-width="2.5" marker-end="url(#arrow-teal-13)"/>
+  <text x="960" y="125" text-anchor="middle" fill="#00A8A8" font-size="11" font-weight="bold">✓ 승인</text>
+
+  <!-- ============ Step 4: 3-타입 동시 적용 ============ -->
+  <rect x="990" y="60" width="270" height="150" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2"/>
+  <text x="1125" y="95" text-anchor="middle" fill="#00A8A8" font-size="16" font-weight="bold">4. 3-타입 동시 적용</text>
+  <line x1="1010" y1="105" x2="1240" y2="105" stroke="#00A8A8" stroke-width="1" opacity="0.4"/>
+  <text x="1125" y="128" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="bold">Simple + Advanced + ML</text>
+  <text x="1010" y="155" fill="#FF9900" font-size="11" font-style="italic">  사용자가 고르지 않음</text>
+  <text x="1010" y="175" fill="#FF9900" font-size="11" font-style="italic">  → 전부 생성·실행</text>
+  <text x="1010" y="200" fill="#999999" font-size="11">  타입별 Workflow 병렬</text>
+
+  <!-- 화살표 4 → 5 (아래로) -->
+  <line x1="1125" y1="225" x2="1125" y2="280" stroke="#00A8A8" stroke-width="2.5" marker-end="url(#arrow-teal-13)"/>
+
+  <!-- ============ Step 5: 비교 대시보드 ============ -->
+  <rect x="990" y="290" width="270" height="150" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2"/>
+  <text x="1125" y="325" text-anchor="middle" fill="#00A8A8" font-size="16" font-weight="bold">5. 비교 대시보드</text>
+  <line x1="1010" y1="335" x2="1240" y2="335" stroke="#00A8A8" stroke-width="1" opacity="0.4"/>
+  <text x="1010" y="360" fill="#FFFFFF" font-size="12">  • 타입별 매칭 그룹 수</text>
+  <text x="1010" y="380" fill="#FFFFFF" font-size="12">  • 미매칭 / 의심 그룹</text>
+  <text x="1010" y="400" fill="#FFFFFF" font-size="12">  • Precision/Recall 차트</text>
+  <text x="1010" y="425" fill="#999999" font-size="11">  React + Cloudscape 콘솔</text>
+
+  <!-- 피드백 루프 화살표 (5 → 2 우회) -->
+  <path d="M 990 365 Q 700 470 430 230" fill="none" stroke="#FF4D8B" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrow-rose-13)"/>
+  <text x="700" y="465" text-anchor="middle" fill="#FF4D8B" font-size="13" font-weight="bold" font-style="italic">[ 사용자 피드백 루프 ]</text>
+  <text x="700" y="488" text-anchor="middle" fill="#FF4D8B" font-size="11" font-style="italic">"이 규칙은 false positive 너무 많아"</text>
+  <text x="700" y="506" text-anchor="middle" fill="#FF4D8B" font-size="11" font-style="italic">→ Bedrock이 새 규칙 재생성</text>
+
+  <!-- ============ 하단 강조 박스 ============ -->
+  <rect x="30" y="540" width="1230" height="70" rx="8" fill="#161E2D" stroke="#FF9900" stroke-width="2"/>
+  <text x="645" y="568" text-anchor="middle" fill="#FF9900" font-size="16" font-weight="bold">핵심 원칙 :  3가지 매칭 타입 모두 자동 생성  ·  사용자에게 어떤 걸 쓸지 묻지 않음</text>
+  <text x="645" y="595" text-anchor="middle" fill="#FFFFFF" font-size="13">사용자는 데이터 + 비즈니스 의도만 제공  ·  AI는 규칙 + 메트릭  ·  사용자는 검증 + 피드백</text>
+</svg>

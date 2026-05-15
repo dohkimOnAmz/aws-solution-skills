@@ -1,0 +1,7 @@
+{
+  "type": "content",
+  "title": "비용 티어 : Minimal에서 시작 → 단계적 확장",
+  "elements": [
+    {"fn": "add_diagram", "args": {"file": "slide-24-tiers-embedded.svg", "x": "C1", "y": "R1", "w": "12-col", "h": "12-row"}}
+  ]
+}

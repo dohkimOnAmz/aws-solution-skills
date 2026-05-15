@@ -1,0 +1,16 @@
+{
+  "type": "content",
+  "title": "UCP 출발점 : 분산 채널 → 동일 고객 통합",
+  "elements": [
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-09-flow-embedded.svg",
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "12-row"
+      }
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1296 624" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <defs>
+    <marker id="arr-20" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00A8A8"/>
+    </marker>
+  </defs>
+
+  <!-- ============ Cell 1: CSV (TL) ============ -->
+  <rect x="20" y="20" width="412" height="290" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2"/>
+  <rect x="20" y="20" width="412" height="40" rx="10" fill="#00A8A8"/>
+  <text x="226" y="46" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">① CSV  ·  default</text>
+
+  <!-- 미니 플로우 -->
+  <g transform="translate(40, 80)">
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/general/Res_Document_48_Dark.png" x="0" y="10" width="40" height="40"/>
+    <text x="20" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">CSV</text>
+
+    <line x1="50" y1="30" x2="78" y2="30" stroke="#00A8A8" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Simple-Storage-Service_48.png" x="85" y="10" width="40" height="40"/>
+    <text x="105" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">S3</text>
+
+    <line x1="135" y1="30" x2="163" y2="30" stroke="#00A8A8" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Lambda_48.png" x="170" y="10" width="40" height="40"/>
+    <text x="190" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">Lambda</text>
+
+    <line x1="220" y1="30" x2="248" y2="30" stroke="#00A8A8" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Glue_48.png" x="255" y="10" width="40" height="40"/>
+    <text x="275" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">Glue Table</text>
+  </g>
+
+  <text x="40" y="180" fill="#00A8A8" font-size="12" font-weight="bold">사용 케이스</text>
+  <text x="40" y="200" fill="#E6EDF3" font-size="11">  ✓ 데모 / PoC</text>
+  <text x="40" y="218" fill="#E6EDF3" font-size="11">  ✓ &lt; 100MB, 빈도 낮음 (주 1)</text>
+  <text x="40" y="236" fill="#E6EDF3" font-size="11">  ✓ Excel 업로드 가능 (운영자)</text>
+  <text x="40" y="254" fill="#E6EDF3" font-size="11">  ✓ 가장 빠른 셋업</text>
+
+  <rect x="40" y="270" width="370" height="28" rx="4" fill="#161E2D"/>
+  <text x="50" y="289" fill="#999999" font-size="10">월 비용</text>
+  <text x="400" y="289" text-anchor="end" fill="#00A8A8" font-size="13" font-weight="bold">$1 - 5</text>
+
+  <!-- ============ Cell 2: Parquet (TM) ============ -->
+  <rect x="446" y="20" width="404" height="290" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2"/>
+  <rect x="446" y="20" width="404" height="40" rx="10" fill="#00A8A8"/>
+  <text x="648" y="46" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">② Parquet  ·  대용량 배치</text>
+
+  <g transform="translate(486, 80)">
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/resource/Res_Amazon-Simple-Storage-Service_S3-Tables_48.png" x="0" y="10" width="40" height="40"/>
+    <text x="20" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">Parquet</text>
+
+    <line x1="50" y1="30" x2="100" y2="30" stroke="#00A8A8" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Simple-Storage-Service_48.png" x="105" y="10" width="40" height="40"/>
+    <text x="125" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">S3</text>
+
+    <line x1="155" y1="30" x2="205" y2="30" stroke="#00A8A8" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Glue_48.png" x="210" y="10" width="40" height="40"/>
+    <text x="230" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">Glue Table</text>
+    <text x="230" y="80" text-anchor="middle" fill="#999999" font-size="9" font-style="italic">직접 참조</text>
+  </g>
+
+  <text x="466" y="180" fill="#00A8A8" font-size="12" font-weight="bold">사용 케이스</text>
+  <text x="466" y="200" fill="#E6EDF3" font-size="11">  ✓ 대용량 (&gt; 100MB)</text>
+  <text x="466" y="218" fill="#E6EDF3" font-size="11">  ✓ 압축률 50-80%</text>
+  <text x="466" y="236" fill="#E6EDF3" font-size="11">  ✓ Athena 컬럼 쿼리 (10x↑)</text>
+  <text x="466" y="254" fill="#E6EDF3" font-size="11">  ✓ 스키마 내장</text>
+
+  <rect x="466" y="270" width="370" height="28" rx="4" fill="#161E2D"/>
+  <text x="476" y="289" fill="#999999" font-size="10">월 비용</text>
+  <text x="826" y="289" text-anchor="end" fill="#00A8A8" font-size="13" font-weight="bold">$5 - 20</text>
+
+  <!-- ============ Cell 3: Kinesis (TR) ============ -->
+  <rect x="864" y="20" width="412" height="290" rx="10" fill="#1A2744" stroke="#FF9900" stroke-width="2"/>
+  <rect x="864" y="20" width="412" height="40" rx="10" fill="#FF9900"/>
+  <text x="1070" y="46" text-anchor="middle" fill="#161E2D" font-size="16" font-weight="bold">③ Kinesis  ·  실시간</text>
+
+  <g transform="translate(884, 80)">
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/general/Res_Data-Stream_48_Dark.png" x="0" y="10" width="40" height="40"/>
+    <text x="20" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">Event</text>
+
+    <line x1="50" y1="30" x2="78" y2="30" stroke="#FF9900" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Kinesis_48.png" x="85" y="10" width="40" height="40"/>
+    <text x="105" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">Kinesis</text>
+
+    <line x1="135" y1="30" x2="163" y2="30" stroke="#FF9900" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/resource/Res_Amazon-EventBridge_Pipes_48.png" x="170" y="10" width="40" height="40"/>
+    <text x="190" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">EB Pipe</text>
+
+    <line x1="220" y1="30" x2="248" y2="30" stroke="#FF9900" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Connect_48.png" x="255" y="10" width="40" height="40"/>
+    <text x="275" y="65" text-anchor="middle" fill="#FFFFFF" font-size="10">CP 직접 적재</text>
+  </g>
+
+  <text x="884" y="180" fill="#FF9900" font-size="12" font-weight="bold">사용 케이스</text>
+  <text x="884" y="200" fill="#E6EDF3" font-size="11">  ✓ 실시간 (&lt; 1초 지연)</text>
+  <text x="884" y="218" fill="#E6EDF3" font-size="11">  ✓ 자동 스케일 (on-demand)</text>
+  <text x="884" y="236" fill="#E6EDF3" font-size="11">  ✓ 24h ~ 365일 보존</text>
+  <text x="884" y="254" fill="#E6EDF3" font-size="11">  ⚠ EB Pipes IAM 트러스트 주의</text>
+
+  <rect x="884" y="270" width="372" height="28" rx="4" fill="#161E2D"/>
+  <text x="894" y="289" fill="#999999" font-size="10">월 비용</text>
+  <text x="1246" y="289" text-anchor="end" fill="#FF9900" font-size="13" font-weight="bold">$30 - 100  (shard 비례)</text>
+
+  <!-- ============ Cell 4: Glue Connection (BL) ============ -->
+  <rect x="20" y="324" width="412" height="282" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2"/>
+  <rect x="20" y="324" width="412" height="40" rx="10" fill="#00A8A8"/>
+  <text x="226" y="350" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">④ Glue Connection  ·  기존 DB</text>
+
+  <g transform="translate(40, 380)">
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-RDS_48.png" x="0" y="10" width="40" height="40"/>
+    <text x="20" y="65" text-anchor="middle" fill="#FFFFFF" font-size="9">RDS / Aurora /</text>
+    <text x="20" y="79" text-anchor="middle" fill="#FFFFFF" font-size="9">DynamoDB</text>
+
+    <line x1="50" y1="30" x2="100" y2="30" stroke="#00A8A8" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/resource/Res_AWS-Glue_Crawler_48.png" x="105" y="10" width="40" height="40"/>
+    <text x="125" y="65" text-anchor="middle" fill="#FFFFFF" font-size="9">Glue Connection</text>
+    <text x="125" y="79" text-anchor="middle" fill="#999999" font-size="9">JDBC + Crawler</text>
+
+    <line x1="155" y1="30" x2="205" y2="30" stroke="#00A8A8" stroke-width="2" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Glue_48.png" x="210" y="10" width="40" height="40"/>
+    <text x="230" y="65" text-anchor="middle" fill="#FFFFFF" font-size="9">Glue Table</text>
+    <text x="230" y="79" text-anchor="middle" fill="#999999" font-size="9">자동 생성</text>
+  </g>
+
+  <text x="40" y="490" fill="#00A8A8" font-size="12" font-weight="bold">사용 케이스</text>
+  <text x="40" y="510" fill="#E6EDF3" font-size="11">  ✓ 기존 DB 직접 연동</text>
+  <text x="40" y="528" fill="#E6EDF3" font-size="11">  ✓ MySQL/PostgreSQL/Oracle/SQL Svr</text>
+  <text x="40" y="546" fill="#E6EDF3" font-size="11">  ✓ DynamoDB 네이티브 지원</text>
+  <text x="40" y="564" fill="#E6EDF3" font-size="11">  ✓ 주기적 동기화 (Crawler)</text>
+
+  <rect x="40" y="576" width="370" height="24" rx="4" fill="#161E2D"/>
+  <text x="50" y="592" fill="#999999" font-size="10">월 비용</text>
+  <text x="400" y="592" text-anchor="end" fill="#00A8A8" font-size="13" font-weight="bold">$10 - 30</text>
+
+  <!-- ============ Cell 5: Hybrid (BM) ============ -->
+  <rect x="446" y="324" width="404" height="282" rx="10" fill="#1A2744" stroke="#FF4D8B" stroke-width="2"/>
+  <rect x="446" y="324" width="404" height="40" rx="10" fill="#FF4D8B"/>
+  <text x="648" y="350" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">⑤ Hybrid  ·  마이그레이션</text>
+
+  <g transform="translate(466, 380)">
+    <!-- 초기 일괄: Glue Connection -->
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-RDS_48.png" x="0" y="0" width="34" height="34"/>
+    <text x="17" y="48" text-anchor="middle" fill="#FFFFFF" font-size="9">기존 DB</text>
+
+    <line x1="40" y1="17" x2="68" y2="17" stroke="#5A6A7A" stroke-width="1.5" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Glue_48.png" x="74" y="0" width="34" height="34"/>
+    <text x="91" y="48" text-anchor="middle" fill="#FFFFFF" font-size="9">Glue Conn</text>
+    <text x="91" y="60" text-anchor="middle" fill="#5A6A7A" font-size="8" font-style="italic">(초기 일괄)</text>
+
+    <!-- 신규 이벤트: Kinesis -->
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/general/Res_Data-Stream_48_Dark.png" x="200" y="0" width="34" height="34"/>
+    <text x="217" y="48" text-anchor="middle" fill="#FFFFFF" font-size="9">신규 이벤트</text>
+
+    <line x1="240" y1="17" x2="268" y2="17" stroke="#FF9900" stroke-width="1.5" marker-end="url(#arr-20)"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_Amazon-Kinesis_48.png" x="274" y="0" width="34" height="34"/>
+    <text x="291" y="48" text-anchor="middle" fill="#FFFFFF" font-size="9">Kinesis</text>
+    <text x="291" y="60" text-anchor="middle" fill="#FF9900" font-size="8" font-style="italic">(지속)</text>
+
+    <!-- 합류 -->
+    <line x1="91" y1="68" x2="160" y2="100" stroke="#00A8A8" stroke-width="1.5"/>
+    <line x1="291" y1="68" x2="220" y2="100" stroke="#00A8A8" stroke-width="1.5"/>
+
+    <image href="/Users/dohkim/.kiro/skills/aws-pptx-generator/assets/aws-icons/service/Arch_AWS-Glue_48.png" x="170" y="100" width="36" height="36"/>
+    <text x="188" y="148" text-anchor="middle" fill="#00A8A8" font-size="10" font-weight="bold">통합 Glue Table</text>
+  </g>
+
+  <text x="466" y="540" fill="#FF4D8B" font-size="11">  ✓ 점진적 전환 단계</text>
+  <text x="466" y="558" fill="#FF4D8B" font-size="11">  ✓ 두 모드 병행</text>
+
+  <rect x="466" y="572" width="370" height="28" rx="4" fill="#161E2D"/>
+  <text x="476" y="591" fill="#999999" font-size="10">월 비용</text>
+  <text x="826" y="591" text-anchor="end" fill="#FF4D8B" font-size="13" font-weight="bold">$40 - 130</text>
+
+  <!-- ============ Cell 6: 결정 가이드 (BR) ============ -->
+  <rect x="864" y="324" width="412" height="282" rx="10" fill="#161E2D" stroke="#FF9900" stroke-width="2.5"/>
+  <text x="1070" y="358" text-anchor="middle" fill="#FF9900" font-size="16" font-weight="bold">결정 가이드</text>
+  <line x1="884" y1="370" x2="1256" y2="370" stroke="#FF9900" stroke-width="1" opacity="0.4"/>
+
+  <text x="884" y="395" fill="#FFFFFF" font-size="12" font-weight="bold">데이터 어디에 있나?</text>
+
+  <text x="884" y="425" fill="#00A8A8" font-size="11">  ✓ 파일 (소량) →</text>
+  <text x="1130" y="425" text-anchor="end" fill="#FFFFFF" font-size="12" font-weight="bold">① CSV</text>
+
+  <text x="884" y="450" fill="#00A8A8" font-size="11">  ✓ 파일 (대용량) →</text>
+  <text x="1130" y="450" text-anchor="end" fill="#FFFFFF" font-size="12" font-weight="bold">② Parquet</text>
+
+  <text x="884" y="475" fill="#FF9900" font-size="11">  ✓ 실시간 이벤트 →</text>
+  <text x="1130" y="475" text-anchor="end" fill="#FFFFFF" font-size="12" font-weight="bold">③ Kinesis</text>
+
+  <text x="884" y="500" fill="#00A8A8" font-size="11">  ✓ 기존 DB →</text>
+  <text x="1130" y="500" text-anchor="end" fill="#FFFFFF" font-size="12" font-weight="bold">④ Glue Conn</text>
+
+  <text x="884" y="525" fill="#FF4D8B" font-size="11">  ✓ 마이그레이션 중 →</text>
+  <text x="1130" y="525" text-anchor="end" fill="#FFFFFF" font-size="12" font-weight="bold">⑤ Hybrid</text>
+
+  <line x1="884" y1="540" x2="1256" y2="540" stroke="#5A6A7A" stroke-width="1" opacity="0.3"/>
+  <text x="884" y="565" fill="#999999" font-size="10" font-style="italic">Skill의 Discovery Phase 6번 질문</text>
+  <text x="884" y="583" fill="#999999" font-size="10" font-style="italic">("데이터 어디에 있나?")으로 자동 결정</text>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "type": "content",
+  "title": "베이스 아키텍처 : 9-레이어 → AWS 관리형 서비스",
+  "elements": [
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-19-base-arch-embedded.svg",
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "12-row"
+      }
+    }
+  ]
+}

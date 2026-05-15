@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 200" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <!-- 카드 배경 -->
+  <rect x="6" y="6" width="844" height="188" rx="10" fill="#1A2744" stroke="#00A8A8" stroke-width="2"/>
+
+  <!-- 도구명 -->
+  <text x="30" y="42" fill="#00A8A8" font-size="22" font-weight="bold">Claude Code (CLI)</text>
+  <text x="30" y="64" fill="#999999" font-size="13" font-style="italic">CLAUDE.md + 슬래시 커맨드 (Anthropic)</text>
+
+  <!-- 셋업 명령 박스 (2줄) -->
+  <rect x="30" y="80" width="650" height="56" rx="4" fill="#161E2D" stroke="#5A6A7A" stroke-width="1"/>
+  <text x="42" y="100" fill="#E6EDF3" font-size="12">$ cp claude-code/CLAUDE.md &lt;project&gt;/</text>
+  <text x="42" y="125" fill="#E6EDF3" font-size="12">$ cp -r claude-code/commands/ .claude/commands/</text>
+
+  <!-- 소요 시간 -->
+  <rect x="700" y="80" width="130" height="56" rx="4" fill="#00A8A8"/>
+  <text x="765" y="115" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">소요 ~1분</text>
+
+  <!-- 트리거 -->
+  <text x="30" y="166" fill="#FFFFFF" font-size="13" font-weight="bold">트리거 (슬래시):</text>
+  <text x="180" y="166" fill="#00A8A8" font-size="14" font-weight="bold">/generate-ucp</text>
+  <text x="380" y="166" fill="#999999" font-size="12">→ Discovery 자연어 대화 시작</text>
+</svg>

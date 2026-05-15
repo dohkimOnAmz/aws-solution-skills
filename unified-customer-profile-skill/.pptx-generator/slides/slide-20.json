@@ -1,0 +1,16 @@
+{
+  "type": "content",
+  "title": "옵션 1 — Ingestion Pipeline 5종 비교",
+  "elements": [
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-20-pipelines-embedded.svg",
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "12-row"
+      }
+    }
+  ]
+}

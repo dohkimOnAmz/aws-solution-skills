@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1296 624" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+
+  <!-- ============ Card 1: Travel & Hospitality ============ -->
+  <rect x="20" y="20" width="410" height="538" rx="12" fill="#1A2744" stroke="#FF4D8B" stroke-width="2.5"/>
+  <rect x="20" y="20" width="410" height="60" rx="12" fill="#FF4D8B"/>
+  <text x="225" y="58" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="bold">✈  Travel &amp; Hospitality</text>
+
+  <!-- 도메인 / 난이도 / 비용 -->
+  <text x="40" y="105" fill="#FFFFFF" font-size="11" font-weight="bold">도메인</text>
+  <text x="120" y="105" fill="#E6EDF3" font-size="11">3 + Platform</text>
+  <text x="240" y="105" fill="#FFFFFF" font-size="11" font-weight="bold">난이도</text>
+  <text x="320" y="105" fill="#FF4D8B" font-size="13" font-weight="bold">★★★</text>
+
+  <line x1="40" y1="115" x2="410" y2="115" stroke="#5A6A7A" stroke-width="1" opacity="0.3"/>
+
+  <text x="40" y="138" fill="#FF4D8B" font-size="13" font-weight="bold">채널 구성</text>
+  <text x="40" y="158" fill="#999999" font-size="11">  Airline (5)  ·  Hotel (5)</text>
+  <text x="40" y="175" fill="#999999" font-size="11">  Agency (3)  ·  Platform 통합</text>
+
+  <text x="40" y="205" fill="#FF4D8B" font-size="13" font-weight="bold">핵심 ER 규칙</text>
+  <text x="40" y="225" fill="#E6EDF3" font-size="11">  • LoyaltyNumber (정확)</text>
+  <text x="40" y="243" fill="#E6EDF3" font-size="11">  • FFN (정확) — 항공 전용</text>
+  <text x="40" y="261" fill="#E6EDF3" font-size="11">  • NameAndEmail (퍼지)</text>
+
+  <text x="40" y="290" fill="#FF4D8B" font-size="13" font-weight="bold">필수 옵션</text>
+  <text x="40" y="312" fill="#E6EDF3" font-size="11">  ✓ Cross-Domain ON</text>
+  <text x="40" y="330" fill="#E6EDF3" font-size="11">  ✓ Knowledge Graph (Neptune)</text>
+  <text x="40" y="348" fill="#E6EDF3" font-size="11">  ✓ Pipeline: Hybrid</text>
+
+  <text x="40" y="378" fill="#FF4D8B" font-size="13" font-weight="bold">특화 가치</text>
+  <text x="40" y="398" fill="#E6EDF3" font-size="11">  • Ecosystem CLV</text>
+  <text x="40" y="416" fill="#999999" font-size="10">    (도메인 합 + 시너지 1.2~1.5x)</text>
+  <text x="40" y="434" fill="#E6EDF3" font-size="11">  • Knowledge Graph 관계</text>
+  <text x="40" y="452" fill="#999999" font-size="10">    (가족, 동행자, 추천 네트워크)</text>
+
+  <!-- 비용 강조 박스 -->
+  <rect x="40" y="478" width="370" height="60" rx="6" fill="#161E2D" stroke="#FF4D8B" stroke-width="1.5"/>
+  <text x="60" y="503" fill="#FFFFFF" font-size="11">월 비용</text>
+  <text x="225" y="510" text-anchor="middle" fill="#FF4D8B" font-size="22" font-weight="bold">$400 - 600</text>
+  <text x="225" y="528" text-anchor="middle" fill="#999999" font-size="10" font-style="italic">Full 티어 — Connect quota 4+ 신청</text>
+
+  <!-- ============ Card 2: Hotel ============ -->
+  <rect x="446" y="20" width="404" height="538" rx="12" fill="#1A2744" stroke="#00A8A8" stroke-width="2.5"/>
+  <rect x="446" y="20" width="404" height="60" rx="12" fill="#00A8A8"/>
+  <text x="648" y="58" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="bold">🏨  Hotel</text>
+
+  <text x="466" y="105" fill="#FFFFFF" font-size="11" font-weight="bold">도메인</text>
+  <text x="546" y="105" fill="#E6EDF3" font-size="11">단일</text>
+  <text x="666" y="105" fill="#FFFFFF" font-size="11" font-weight="bold">난이도</text>
+  <text x="746" y="105" fill="#00A8A8" font-size="13" font-weight="bold">★</text>
+
+  <line x1="466" y1="115" x2="836" y2="115" stroke="#5A6A7A" stroke-width="1" opacity="0.3"/>
+
+  <text x="466" y="138" fill="#00A8A8" font-size="13" font-weight="bold">채널 구성 (6개)</text>
+  <text x="466" y="158" fill="#999999" font-size="11">  Web · App · OTA · Walk-in</text>
+  <text x="466" y="175" fill="#999999" font-size="11">  Call Center · Corporate</text>
+
+  <text x="466" y="205" fill="#00A8A8" font-size="13" font-weight="bold">핵심 ER 규칙</text>
+  <text x="466" y="225" fill="#E6EDF3" font-size="11">  • LoyaltyNumber 우선 (정확)</text>
+  <text x="466" y="243" fill="#E6EDF3" font-size="11">  • NameAndPhone (OTA relay 우회)</text>
+  <text x="466" y="261" fill="#E6EDF3" font-size="11">  • NameAndDOB (전화 없을 때)</text>
+
+  <text x="466" y="290" fill="#00A8A8" font-size="13" font-weight="bold">필수 옵션</text>
+  <text x="466" y="312" fill="#E6EDF3" font-size="11">  ✗ Cross-Domain OFF (단일)</text>
+  <text x="466" y="330" fill="#E6EDF3" font-size="11">  ✗ Graph OFF</text>
+  <text x="466" y="348" fill="#E6EDF3" font-size="11">  ✓ Pipeline: CSV (default)</text>
+
+  <text x="466" y="378" fill="#00A8A8" font-size="13" font-weight="bold">특화 가치</text>
+  <text x="466" y="398" fill="#E6EDF3" font-size="11">  • OTA relay email 자동 감지</text>
+  <text x="466" y="418" fill="#999999" font-size="10">    isRelayEmail() 정규식 내장</text>
+  <text x="466" y="438" fill="#E6EDF3" font-size="11">  • 법인 대리예약 처리</text>
+  <text x="466" y="458" fill="#999999" font-size="10">    (이름이 게스트 ≠ 결제자)</text>
+
+  <rect x="466" y="478" width="370" height="60" rx="6" fill="#161E2D" stroke="#00A8A8" stroke-width="1.5"/>
+  <text x="486" y="503" fill="#FFFFFF" font-size="11">월 비용</text>
+  <text x="651" y="510" text-anchor="middle" fill="#00A8A8" font-size="22" font-weight="bold">$50 - 100</text>
+  <text x="651" y="528" text-anchor="middle" fill="#999999" font-size="10" font-style="italic">Minimal 티어 — 가장 시작하기 쉬움</text>
+
+  <!-- ============ Card 3: Retail / E-commerce ============ -->
+  <rect x="866" y="20" width="410" height="538" rx="12" fill="#1A2744" stroke="#FF9900" stroke-width="2.5"/>
+  <rect x="866" y="20" width="410" height="60" rx="12" fill="#FF9900"/>
+  <text x="1071" y="58" text-anchor="middle" fill="#161E2D" font-size="20" font-weight="bold">🛒  Retail / E-commerce</text>
+
+  <text x="886" y="105" fill="#FFFFFF" font-size="11" font-weight="bold">도메인</text>
+  <text x="966" y="105" fill="#E6EDF3" font-size="11">단일</text>
+  <text x="1086" y="105" fill="#FFFFFF" font-size="11" font-weight="bold">난이도</text>
+  <text x="1166" y="105" fill="#FF9900" font-size="13" font-weight="bold">★★</text>
+
+  <line x1="886" y1="115" x2="1256" y2="115" stroke="#5A6A7A" stroke-width="1" opacity="0.3"/>
+
+  <text x="886" y="138" fill="#FF9900" font-size="13" font-weight="bold">채널 구성 (5개)</text>
+  <text x="886" y="158" fill="#999999" font-size="11">  Web · Mobile · POS</text>
+  <text x="886" y="175" fill="#999999" font-size="11">  Call Center · Marketplace</text>
+
+  <text x="886" y="205" fill="#FF9900" font-size="13" font-weight="bold">핵심 ER 규칙</text>
+  <text x="886" y="225" fill="#E6EDF3" font-size="11">  • LoyaltyNumber (정확)</text>
+  <text x="886" y="243" fill="#E6EDF3" font-size="11">  • EmailOnly (1인 1메일 가정)</text>
+  <text x="886" y="261" fill="#E6EDF3" font-size="11">  • NameAndPhone (POS 멤버십)</text>
+
+  <text x="886" y="290" fill="#FF9900" font-size="13" font-weight="bold">필수 옵션</text>
+  <text x="886" y="312" fill="#E6EDF3" font-size="11">  ✗ Cross-Domain OFF (단일)</text>
+  <text x="886" y="330" fill="#E6EDF3" font-size="11">  ✗ Graph OFF</text>
+  <text x="886" y="348" fill="#E6EDF3" font-size="11">  ✓ Pipeline: Kinesis (실시간)</text>
+
+  <text x="886" y="378" fill="#FF9900" font-size="13" font-weight="bold">특화 가치</text>
+  <text x="886" y="398" fill="#E6EDF3" font-size="11">  • RFM 세그먼트 자동 분류</text>
+  <text x="886" y="418" fill="#999999" font-size="10">    Champion·Loyal·AtRisk·Lost·New</text>
+  <text x="886" y="438" fill="#E6EDF3" font-size="11">  • 게스트 구매 처리</text>
+  <text x="886" y="458" fill="#999999" font-size="10">    (이메일만 있고 이름 없음)</text>
+
+  <rect x="886" y="478" width="370" height="60" rx="6" fill="#161E2D" stroke="#FF9900" stroke-width="1.5"/>
+  <text x="906" y="503" fill="#FFFFFF" font-size="11">월 비용</text>
+  <text x="1071" y="510" text-anchor="middle" fill="#FF9900" font-size="22" font-weight="bold">$100 - 200</text>
+  <text x="1071" y="528" text-anchor="middle" fill="#999999" font-size="10" font-style="italic">Standard 티어 — 실시간 + ML 매칭</text>
+
+  <!-- ============ 하단 메시지 ============ -->
+  <text x="648" y="595" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">신규 산업 (금융 · 헬스케어 · 텔코) = shared/examples/ 한 장 추가</text>
+</svg>

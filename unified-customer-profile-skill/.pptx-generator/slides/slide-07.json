@@ -1,0 +1,46 @@
+{
+  "type": "content",
+  "title": "패키지 구조 : shared/ 중심, 어댑터는 진입점",
+  "elements": [
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-07-tree-embedded.svg",
+        "x": "C1",
+        "y": "R1",
+        "w": "4-col",
+        "h": "12-row"
+      }
+    },
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-07-quick-embedded.svg",
+        "x": "C5",
+        "y": "R1",
+        "w": "8-col",
+        "h": "4-row"
+      }
+    },
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-07-kiro-embedded.svg",
+        "x": "C5",
+        "y": "R5",
+        "w": "8-col",
+        "h": "4-row"
+      }
+    },
+    {
+      "fn": "add_diagram",
+      "args": {
+        "file": "slide-07-claude-code-embedded.svg",
+        "x": "C5",
+        "y": "R9",
+        "w": "8-col",
+        "h": "4-row"
+      }
+    }
+  ]
+}

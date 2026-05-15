@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636 580" preserveAspectRatio="xMidYMid meet" font-family="D2Coding">
+  <!-- L9 Cross-Domain (선택) -->
+  <rect x="20" y="14" width="596" height="50" rx="4" fill="#161E2D" stroke="#5A6A7A" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="40" y="44" fill="#999999" font-size="14" font-weight="bold">9. Cross-Domain</text>
+  <text x="500" y="44" fill="#5A6A7A" font-size="11" font-style="italic">[선택]</text>
+  <text x="240" y="44" fill="#5A6A7A" font-size="11">멀티 사업부 통합</text>
+
+  <!-- L8 Graph (선택) -->
+  <rect x="20" y="74" width="596" height="50" rx="4" fill="#161E2D" stroke="#5A6A7A" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="40" y="104" fill="#999999" font-size="14" font-weight="bold">8. Graph</text>
+  <text x="500" y="104" fill="#5A6A7A" font-size="11" font-style="italic">[선택]</text>
+  <text x="240" y="104" fill="#5A6A7A" font-size="11">Neptune + GraphRAG</text>
+
+  <!-- L7 API -->
+  <rect x="20" y="134" width="596" height="50" rx="4" fill="#1A2744" stroke="#00A8A8" stroke-width="1.5"/>
+  <text x="40" y="164" fill="#FFFFFF" font-size="14" font-weight="bold">7. API</text>
+  <text x="240" y="164" fill="#999999" font-size="12">API Gateway + Lambda Handlers</text>
+
+  <!-- L6 Auth -->
+  <rect x="20" y="194" width="596" height="50" rx="4" fill="#1A2744" stroke="#00A8A8" stroke-width="1.5"/>
+  <text x="40" y="224" fill="#FFFFFF" font-size="14" font-weight="bold">6. Auth</text>
+  <text x="240" y="224" fill="#999999" font-size="12">Cognito User Pool + Hosted UI</text>
+
+  <!-- L5.5 ETL Transform (선택) -->
+  <rect x="20" y="254" width="596" height="50" rx="4" fill="#161E2D" stroke="#5A6A7A" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="40" y="284" fill="#999999" font-size="14" font-weight="bold">5.5. ETL Transform</text>
+  <text x="500" y="284" fill="#5A6A7A" font-size="11" font-style="italic">[선택]</text>
+  <text x="240" y="284" fill="#5A6A7A" font-size="11">PII 정규화 (Glue ETL)</text>
+
+  <!-- L5 Ingestion -->
+  <rect x="20" y="314" width="596" height="50" rx="4" fill="#1A2744" stroke="#00A8A8" stroke-width="1.5"/>
+  <text x="40" y="344" fill="#FFFFFF" font-size="14" font-weight="bold">5. Ingestion</text>
+  <text x="240" y="344" fill="#999999" font-size="12">CSV / Parquet / Kinesis / Glue / Hybrid</text>
+
+  <!-- L4 Matching -->
+  <rect x="20" y="374" width="596" height="50" rx="4" fill="#1A2744" stroke="#FF9900" stroke-width="2"/>
+  <text x="40" y="404" fill="#FFFFFF" font-size="14" font-weight="bold">4. Matching</text>
+  <text x="240" y="404" fill="#FF9900" font-size="12" font-weight="bold">Entity Resolution + Glue + DDB</text>
+
+  <!-- L3 Profiles -->
+  <rect x="20" y="434" width="596" height="50" rx="4" fill="#1A2744" stroke="#FF9900" stroke-width="2"/>
+  <text x="40" y="464" fill="#FFFFFF" font-size="14" font-weight="bold">3. Profiles</text>
+  <text x="240" y="464" fill="#FF9900" font-size="12" font-weight="bold">Connect CP Domain + Object Types</text>
+
+  <!-- L2 Storage -->
+  <rect x="20" y="494" width="596" height="50" rx="4" fill="#1A2744" stroke="#00A8A8" stroke-width="1.5"/>
+  <text x="40" y="524" fill="#FFFFFF" font-size="14" font-weight="bold">2. Storage</text>
+  <text x="240" y="524" fill="#999999" font-size="12">S3 Bucket (KMS 암호화)</text>
+
+  <!-- L1 Foundation -->
+  <rect x="20" y="554" width="596" height="22" rx="4" fill="#1A2744" stroke="#5A6A7A" stroke-width="1"/>
+  <text x="40" y="571" fill="#FFFFFF" font-size="13" font-weight="bold">1. Foundation</text>
+  <text x="240" y="571" fill="#999999" font-size="11">KMS Key + SQS DLQ (보안 기본값)</text>
+</svg>

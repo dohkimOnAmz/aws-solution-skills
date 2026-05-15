@@ -1,0 +1,21 @@
+---
+name: AWS PPTX — Env check on pptx trigger
+description: 사용자 프롬프트에 pptx 관련 키워드가 포함되면 check_env.py를 1일 1회 실행하여 필수 패키지 누락을 Phase 1 진입 전에 감지한다.
+event: promptSubmit
+action: runCommand
+timeout: 30
+command: |
+  case "${USER_PROMPT:-}" in
+    *pptx*|*슬라이드*|*발표*|*프레젠테이션*|*pptx-generator*|*"스트레스 테스트"*)
+      CACHE="/tmp/kiro-pptx-env-ok-$(date +%Y%m%d)"
+      if [ -f "$CACHE" ]; then exit 0; fi
+      if python3 .kiro/skills/aws-pptx-generator/scripts/check_env.py > /tmp/kiro-pptx-env.log 2>&1; then
+        touch "$CACHE"
+        exit 0
+      fi
+      cat /tmp/kiro-pptx-env.log
+      exit 0
+      ;;
+  esac
+  exit 0
+---

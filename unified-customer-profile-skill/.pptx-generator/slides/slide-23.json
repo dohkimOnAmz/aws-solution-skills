@@ -1,0 +1,52 @@
+{
+  "type": "content",
+  "title": "산업별 권장 옵션 조합",
+  "elements": [
+    {
+      "fn": "add_table",
+      "args": {
+        "x": "C1",
+        "y": "R1",
+        "w": "12-col",
+        "h": "8-row",
+        "headers": ["산업", "Pipeline", "Graph", "Cross-Domain", "핵심 ER 규칙", "월 비용", "핵심 도전"],
+        "rows": [
+          ["✈ Travel", "Hybrid (Glue + Kinesis)", "ON (Neptune + GraphRAG)", "ON (3+Platform)", "FFN, Loyalty + Name+Email", "$400-600", "Connect quota 4+, Ecosystem CLV"],
+          ["🏨 Hotel", "CSV (default)", "OFF", "OFF (단일)", "Loyalty, Name+Phone", "$50-100", "OTA relay email, 법인 대리예약"],
+          ["🛒 Retail", "Kinesis (실시간)", "OFF", "OFF (단일)", "Loyalty, EmailOnly, Name+Phone", "$100-200", "게스트 구매, 마켓플레이스 relay"]
+        ],
+        "style": "comparison",
+        "col_widths": [0.10, 0.14, 0.14, 0.14, 0.20, 0.10, 0.18]
+      }
+    },
+    {
+      "fn": "add_textbox",
+      "args": {
+        "x": "C1",
+        "y": "R10",
+        "w": "12-col",
+        "h": "3-row",
+        "padding": true,
+        "valign": "middle",
+        "runs": [
+          {
+            "text": "같은 9-레이어 베이스 위에 옵션 조합만 다르다.\n",
+            "color_token": "ACCENT_ORANGE",
+            "font_size_token": "SUBTITLE_S",
+            "bold": true
+          },
+          {
+            "text": "Skill의 Discovery Phase에서 사용자가 산업·데이터·관계 분석 필요 여부를 답하면, decision-tree.md 6개 분기를 거쳐 위 표의 한 행이 자동 선택된다.\n",
+            "color_token": "TEXT_WHITE",
+            "font_size_token": "BODY_M"
+          },
+          {
+            "text": "→ 새 산업 (금융·헬스케어·텔코) = shared/examples/<industry>.md 한 장 추가",
+            "color_token": "TEXT_GRAY",
+            "font_size_token": "BODY_S"
+          }
+        ]
+      }
+    }
+  ]
+}
